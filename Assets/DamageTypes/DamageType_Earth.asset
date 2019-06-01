@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75b6f1795ae4b894a9f19cc17e5b3aba, type: 3}
+  m_Name: DamageType_Earth
+  m_EditorClassIdentifier: 
+  name: Earth
+  textColour: {r: 0.5294118, g: 0.33333334, b: 0.078431375, a: 1}

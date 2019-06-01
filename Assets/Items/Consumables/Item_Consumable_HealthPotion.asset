@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd0100118f03d864f953e91dfc127765, type: 3}
+  m_Name: Item_Consumable_HealthPotion
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: 4805fbc25dd887f4ebb921f247609627, type: 2}
+    - {fileID: 11400000, guid: 5fb2738e127dfa7458b6f102afab9d44, type: 2}
+    - {fileID: 11400000}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: abilityRequirements
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[Hel.Abilities.AbilityRequirement,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: abilityActions
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[Hel.Abilities.AbilityAction, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 2|Hel.Abilities.CustomActions.WaitAction, Assembly-CSharp
+    - Name: isInterruptible
+      Entry: 5
+      Data: false
+    - Name: waitTime
+      Entry: 4
+      Data: 3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 3|Hel.Abilities.CustomActions.SpendManaAction, Assembly-CSharp
+    - Name: isInterruptible
+      Entry: 5
+      Data: false
+    - Name: playerStatsHolder
+      Entry: 10
+      Data: 0
+    - Name: manaToSpend
+      Entry: 3
+      Data: 10
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 4|Hel.Abilities.CustomActions.RemoveItemAction, Assembly-CSharp
+    - Name: isInterruptible
+      Entry: 5
+      Data: false
+    - Name: playerInventory
+      Entry: 10
+      Data: 1
+    - Name: itemToRemove
+      Entry: 10
+      Data: 2
+    - Name: quantityToRemove
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  name: Health Potion
+  icon: {fileID: 21300000, guid: 63e01515f0deeba41a6b194fc04ea176, type: 3}
+  rarity: {fileID: 11400000, guid: 5366b8cf6e769fa4eaf74d97249b9018, type: 2}
+  sellPrice: 1
+  maxStack: 3
+  onUseablePressed: {fileID: 11400000, guid: f7e99d76292b9ba4eb3cd9ae4d33beb4, type: 2}
+  useText: Restores 15 health.

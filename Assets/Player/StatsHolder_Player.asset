@@ -1,0 +1,175 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bf76dd3b34133344b69ca90407a4432, type: 3}
+  m_Name: StatsHolder_Player
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: 015e631a40a93c949919b187d4a2b40e, type: 2}
+    - {fileID: 11400000, guid: fea5901cee71bd741aee851ec3d1827b, type: 2}
+    - {fileID: 11400000, guid: 515cb6301ca5df94ab33952a20e2d266, type: 2}
+    - {fileID: 11400000, guid: dd56be062289fa84f8ad351f4d790913, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: levelUpStatChanges
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[Hel.Combat.Stat, Assembly-CSharp],[Hel.Combat.StatModifier,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[Hel.Combat.Stat,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 0
+    - Name: $v
+      Entry: 7
+      Data: 2|Hel.Combat.StatModifier, Assembly-CSharp
+    - Name: value
+      Entry: 4
+      Data: 1.2
+    - Name: type
+      Entry: 3
+      Data: 200
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 1
+    - Name: $v
+      Entry: 7
+      Data: 3|Hel.Combat.StatModifier, Assembly-CSharp
+    - Name: value
+      Entry: 4
+      Data: 1.1
+    - Name: type
+      Entry: 3
+      Data: 200
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: levelUpCurrencyChanges
+      Entry: 7
+      Data: 4|System.Collections.Generic.Dictionary`2[[Hel.Items.Currency, Assembly-CSharp],[System.Int32,
+        mscorlib]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 5|System.Collections.Generic.ObjectEqualityComparer`1[[Hel.Items.Currency,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 2
+    - Name: $v
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 3
+    - Name: $v
+      Entry: 3
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  onPlayerHealthChanged: {fileID: 11400000, guid: 8d764c4ccd753864b84b40341ff27823,
+    type: 2}
+  onPlayerManaChanged: {fileID: 11400000, guid: e6461fe2a26ad6b4782461035320e999,
+    type: 2}
+  onPlayerDied: {fileID: 11400000, guid: cf894ec8119fa4a4b9215e6081655515, type: 2}
+  onPlayerExperienceChanged: {fileID: 11400000, guid: 3867dfd33de9aea4bbfbd890b79d52bc,
+    type: 2}
+  onPlayerLevelUp: {fileID: 11400000, guid: 4bfa44b4ae87ce547be36e43588c4a6a, type: 2}
+  onPlayerCurrenciesChanged: {fileID: 11400000, guid: e9804cd436f6ddc4da127c914a166ccf,
+    type: 2}
+  defaultStats:
+    health: 100
+    statData:
+    - stat: {fileID: 11400000, guid: 015e631a40a93c949919b187d4a2b40e, type: 2}
+      baseValue: 100
+      statModifiers: []
+    - stat: {fileID: 11400000, guid: fea5901cee71bd741aee851ec3d1827b, type: 2}
+      baseValue: 100
+      statModifiers: []
+    - stat: {fileID: 11400000, guid: 2413e2e0855825f43b145264c3d895e8, type: 2}
+      baseValue: 15
+      statModifiers: []
+    - stat: {fileID: 11400000, guid: c2aceae053187a249bd26d581070eed7, type: 2}
+      baseValue: 100
+      statModifiers: []
+    - stat: {fileID: 11400000, guid: 41a7754121b857144a3199520091d21a, type: 2}
+      baseValue: 0
+      statModifiers: []
+    - stat: {fileID: 11400000, guid: 8c31b66034d6f1648af5756d90037567, type: 2}
+      baseValue: 0
+      statModifiers: []
+    - stat: {fileID: 11400000, guid: 025c995878a7949458bfb8c43d56a85b, type: 2}
+      baseValue: 0
+      statModifiers: []
+  defaultCurrencies:
+    currencyData:
+    - currency: {fileID: 11400000, guid: 0a5a10f2ecb6b5348b87d7287ed9271e, type: 2}
+      amount: 0
+    - currency: {fileID: 11400000, guid: 515cb6301ca5df94ab33952a20e2d266, type: 2}
+      amount: 0
+    - currency: {fileID: 11400000, guid: dd56be062289fa84f8ad351f4d790913, type: 2}
+      amount: 0
