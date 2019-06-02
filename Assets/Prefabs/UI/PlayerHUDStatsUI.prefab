@@ -279,15 +279,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4d0ebc0756333e489104338daf888ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerStatsHolder: {fileID: 11400000, guid: 4805fbc25dd887f4ebb921f247609627, type: 2}
+  playerStatsDataHolder: {fileID: 11400000, guid: 4805fbc25dd887f4ebb921f247609627,
+    type: 2}
   healthbarSlider: {fileID: 6876273966598707743}
   healthbarSliderText: {fileID: 7571922069689226896}
   manabarSlider: {fileID: 6433047944655590618}
   manabarSliderText: {fileID: 4978636159982400427}
   experienceImage: {fileID: 2334514364002091585}
   playerLevelText: {fileID: 8273067131687730328}
-  maxHealthStat: {fileID: 11400000, guid: 015e631a40a93c949919b187d4a2b40e, type: 2}
-  maxManaStat: {fileID: 11400000, guid: fea5901cee71bd741aee851ec3d1827b, type: 2}
 --- !u!114 &2974577496640857149
 MonoBehaviour:
   m_ObjectHideFlags: 0

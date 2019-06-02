@@ -1706,7 +1706,8 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  playerStatsHolder: {fileID: 11400000, guid: 4805fbc25dd887f4ebb921f247609627, type: 2}
+  playerStatsDataHolder: {fileID: 11400000, guid: 4805fbc25dd887f4ebb921f247609627,
+    type: 2}
   spellPointsText: {fileID: 3471161190486718124}
   elementTrees:
   - {fileID: 11400000, guid: a00d23c345a2de74da38703a989e9224, type: 2}
@@ -6098,21 +6099,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7935353560291461689, guid: 554366f6f14178e4cb09706bd5cd1664,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935353560291461689, guid: 554366f6f14178e4cb09706bd5cd1664,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935353560291461689, guid: 554366f6f14178e4cb09706bd5cd1664,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935353560291461689, guid: 554366f6f14178e4cb09706bd5cd1664,
-        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 3465673421504612009}
@@ -6125,26 +6111,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5354713202789649552, guid: 554366f6f14178e4cb09706bd5cd1664,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5354713202789649552, guid: 554366f6f14178e4cb09706bd5cd1664,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5354713202789649552, guid: 554366f6f14178e4cb09706bd5cd1664,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5354713202789649552, guid: 554366f6f14178e4cb09706bd5cd1664,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 554366f6f14178e4cb09706bd5cd1664, type: 3}

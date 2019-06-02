@@ -14,7 +14,7 @@ namespace Hel.Items.Hotbars
     public class HotbarSlot : ItemSlotUI, IDropHandler
     {
         [Required] [SerializeField] private PlayerInventory playerInventory;
-        [Required] [SerializeField] private AbilityCooldownSystem cooldownDataHolder;
+        [Required] [SerializeField] private AbilityCooldownDataHolder abilityCooldownDataHolder;
         [Required] [SerializeField] private TextMeshProUGUI itemQuantityText;
         [Required] [SerializeField] private Image cooldownOverlay;
         [Required] [SerializeField] private TextMeshProUGUI cooldownOverlayText;
@@ -41,7 +41,7 @@ namespace Hel.Items.Hotbars
         {
             if (index != SlotIndex) { return; }
 
-            if (SlotItem is ICooldownable cooldown) { cooldownDataHolder.IsOnCooldown(cooldown); }
+            if (SlotItem is ICooldownable cooldown) { abilityCooldownDataHolder.IsOnCooldown(cooldown); }
 
             if (SlotItem is IUseable useable) { useable.Use(); }
         }
@@ -122,7 +122,7 @@ namespace Hel.Items.Hotbars
 
             if (SlotItem is ICooldownable cooldown)
             {
-                if (cooldownDataHolder.IsOnCooldown(cooldown))
+                if (abilityCooldownDataHolder.IsOnCooldown(cooldown))
                 {
                     SetCooldownUI(cooldown);
                     cooldownUICoroutine = StartCoroutine(CooldownUiCoroutine(cooldown));
@@ -141,7 +141,7 @@ namespace Hel.Items.Hotbars
 
         private IEnumerator CooldownUiCoroutine(ICooldownable cooldown)
         {
-            while (cooldownDataHolder.IsOnCooldown(cooldown))
+            while (abilityCooldownDataHolder.IsOnCooldown(cooldown))
             {
                 SetCooldownUI(cooldown);
                 yield return null;
@@ -154,7 +154,7 @@ namespace Hel.Items.Hotbars
 
         private void SetCooldownUI(ICooldownable cooldown)
         {
-            float remainingCooldownTime = cooldownDataHolder.GetDisplayCooldown(cooldown, out float maxCooldownDuration);
+            float remainingCooldownTime = abilityCooldownDataHolder.GetDisplayCooldown(cooldown, out float maxCooldownDuration);
             cooldownOverlay.fillAmount = remainingCooldownTime / maxCooldownDuration;
             cooldownOverlayText.text = Mathf.RoundToInt(remainingCooldownTime).ToString();
         }

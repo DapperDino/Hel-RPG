@@ -36,7 +36,7 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|Hel.Abilities.CustomRequirements.ManaRequirement, Assembly-CSharp
-    - Name: playerStatsHolder
+    - Name: playerStatsDataHolder
       Entry: 10
       Data: 0
     - Name: requiredMana
@@ -48,7 +48,7 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 2|Hel.Abilities.CustomRequirements.CooldownRequirement, Assembly-CSharp
-    - Name: cooldownDataHolder
+    - Name: abilityCooldownDataHolder
       Entry: 10
       Data: 1
     - Name: cooldownable
@@ -121,7 +121,7 @@ MonoBehaviour:
     - Name: isInterruptible
       Entry: 5
       Data: false
-    - Name: playerStatsHolder
+    - Name: playerStatsDataHolder
       Entry: 10
       Data: 0
     - Name: manaToSpend
@@ -136,7 +136,7 @@ MonoBehaviour:
     - Name: isInterruptible
       Entry: 5
       Data: false
-    - Name: cooldownDataHolder
+    - Name: abilityCooldownDataHolder
       Entry: 10
       Data: 1
     - Name: cooldown

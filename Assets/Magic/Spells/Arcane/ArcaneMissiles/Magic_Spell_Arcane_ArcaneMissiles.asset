@@ -21,7 +21,7 @@ MonoBehaviour:
     - {fileID: 11400000}
     - {fileID: 11400000, guid: 69bdf109457465b49acbaa366e91d9ad, type: 2}
     - {fileID: 11400000, guid: 7ba604383805b6845a130c91601795f9, type: 2}
-    - {fileID: 11400000, guid: 1a2f297dad6759b4e85dc2092fdd9589, type: 2}
+    - {fileID: 11400000, guid: 57aa93aded1df304a9c1b55ed4893463, type: 2}
     - {fileID: 11400000, guid: ceb08a313ea37684ea5603d42163b076, type: 2}
     - {fileID: 8706681514819689307, guid: 25600ba54cb0da5418d70905f8266967, type: 3}
     SerializedBytesString: 
@@ -39,7 +39,7 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|Hel.Abilities.CustomRequirements.ManaRequirement, Assembly-CSharp
-    - Name: playerStatsHolder
+    - Name: playerStatsDataHolder
       Entry: 10
       Data: 0
     - Name: requiredMana
@@ -51,7 +51,7 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 2|Hel.Abilities.CustomRequirements.CooldownRequirement, Assembly-CSharp
-    - Name: cooldownDataHolder
+    - Name: abilityCooldownDataHolder
       Entry: 10
       Data: 1
     - Name: cooldownable
@@ -112,7 +112,7 @@ MonoBehaviour:
     - Name: isInterruptible
       Entry: 5
       Data: false
-    - Name: abilityChannelSystem
+    - Name: abilityChannelDataHolder
       Entry: 10
       Data: 5
     - Name: onChannelableInterrupted
@@ -169,7 +169,7 @@ MonoBehaviour:
     - Name: isInterruptible
       Entry: 5
       Data: false
-    - Name: playerStatsHolder
+    - Name: playerStatsDataHolder
       Entry: 10
       Data: 0
     - Name: manaToSpend
@@ -184,7 +184,7 @@ MonoBehaviour:
     - Name: isInterruptible
       Entry: 5
       Data: false
-    - Name: cooldownDataHolder
+    - Name: abilityCooldownDataHolder
       Entry: 10
       Data: 1
     - Name: cooldown

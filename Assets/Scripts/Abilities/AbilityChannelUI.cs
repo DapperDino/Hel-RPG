@@ -6,9 +6,12 @@ using UnityEngine.UI;
 
 namespace Hel.Abilities
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class AbilityChannelUI : MonoBehaviour
     {
-        [Required] [SerializeField] private AbilityChannelSystem abilityChannelSystem = null;
+        [Required] [SerializeField] private AbilityChannelDataHolder abilityChannelDataHolder = null;
         [Required] [SerializeField] private CanvasGroup channelUICanvasGroup = null;
         [Required] [SerializeField] private Slider channelBarSlider = null;
         [Required] [SerializeField] private TextMeshProUGUI spellNameText = null;
@@ -22,7 +25,7 @@ namespace Hel.Abilities
         public void InterruptChannel()
         {
             StopAllCoroutines();
-            abilityChannelSystem.Finish();
+            abilityChannelDataHolder.Finish();
             StartCoroutine(Fade(false));
         }
 
@@ -30,11 +33,11 @@ namespace Hel.Abilities
         {
             StartCoroutine(Fade(true));
 
-            spellNameText.text = abilityChannelSystem.CurrentChannelable.Name;
+            spellNameText.text = abilityChannelDataHolder.CurrentChannelable.Name;
 
-            while (!abilityChannelSystem.FinishedChanneling)
+            while (!abilityChannelDataHolder.FinishedChanneling)
             {
-                channelBarSlider.value = 1 - (abilityChannelSystem.RemainingChannelTime / abilityChannelSystem.CurrentChannelable.ChannelDuration);
+                channelBarSlider.value = 1 - (abilityChannelDataHolder.RemainingChannelTime / abilityChannelDataHolder.CurrentChannelable.ChannelDuration);
 
                 yield return null;
             }

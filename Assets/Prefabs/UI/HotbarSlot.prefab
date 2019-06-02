@@ -380,7 +380,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemIconImage: {fileID: 4680371478691164864}
   playerInventory: {fileID: 11400000, guid: 5fb2738e127dfa7458b6f102afab9d44, type: 2}
-  cooldownDataHolder: {fileID: 11400000, guid: c53ed76a063f5ed42ae2030619f29ef2, type: 2}
+  abilityCooldownDataHolder: {fileID: 11400000, guid: c53ed76a063f5ed42ae2030619f29ef2,
+    type: 2}
   itemQuantityText: {fileID: 8868319951204652584}
   cooldownOverlay: {fileID: 4136646548531793006}
   cooldownOverlayText: {fileID: 8216094130867790673}

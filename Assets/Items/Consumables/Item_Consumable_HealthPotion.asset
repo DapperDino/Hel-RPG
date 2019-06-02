@@ -62,7 +62,7 @@ MonoBehaviour:
     - Name: isInterruptible
       Entry: 5
       Data: false
-    - Name: playerStatsHolder
+    - Name: playerStatsDataHolder
       Entry: 10
       Data: 0
     - Name: manaToSpend

@@ -5,15 +5,20 @@ using UnityEngine;
 
 namespace Hel.Abilities.CustomActions
 {
+    /// <summary>
+    /// Used to put item on cooldown.
+    /// </summary>
     [Serializable]
     public class PutOnCooldownAction : AbilityAction
     {
-        [Required] [SerializeField] private AbilityCooldownSystem cooldownDataHolder;
-        [Required] [SerializeField] private ICooldownable cooldown;
+        [Required] [SerializeField] private AbilityCooldownDataHolder abilityCooldownDataHolder = null;
+        [Required] [SerializeField] private ICooldownable cooldown = null;
 
         public override IEnumerator Trigger(AbilityCastData abilityCastData)
         {
-            cooldownDataHolder.PutOnCooldown(cooldown);
+            //Put the item on cooldown.
+            abilityCooldownDataHolder.PutOnCooldown(cooldown);
+
             yield return null;
         }
     }

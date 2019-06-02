@@ -7,6 +7,9 @@ using UnityEngine;
 
 namespace Hel.Abilities.CustomActions
 {
+    /// <summary>
+    /// Used to remove an item from the player's inventory.
+    /// </summary>
     [Serializable]
     public class RemoveItemAction : AbilityAction
     {
@@ -16,7 +19,9 @@ namespace Hel.Abilities.CustomActions
 
         public override IEnumerator Trigger(AbilityCastData abilityCastData)
         {
+            //Remove the desired quantity of the desired item from the player's inventory.
             playerInventory.ItemHolder.RemoveItem(itemToRemove, quantityToRemove);
+
             yield return null;
         }
     }

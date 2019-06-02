@@ -6,15 +6,20 @@ using UnityEngine;
 
 namespace Hel.Abilities.CustomActions
 {
+    /// <summary>
+    /// Used to spend the player's mana.
+    /// </summary>
     [Serializable]
     public class SpendManaAction : AbilityAction
     {
-        [Required] [SerializeField] private PlayerStatsHolder playerStatsHolder;
-        [SerializeField] private int manaToSpend;
+        [Required] [SerializeField] private PlayerStatsDataHolder playerStatsDataHolder = null;
+        [SerializeField] private int manaToSpend = 10;
 
         public override IEnumerator Trigger(AbilityCastData abilityCastData)
         {
-            playerStatsHolder.Mana -= manaToSpend;
+            //Remove the desired amount of mana from the player's mana pool.
+            playerStatsDataHolder.Mana -= manaToSpend;
+
             yield return null;
         }
     }

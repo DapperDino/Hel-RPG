@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Hel.Abilities
 {
+    /// <summary>
+    /// Used to be able to pass data to ability actions that they might need access to.
+    /// </summary>
     [Serializable]
     public struct AbilityCastData
     {

@@ -402,7 +402,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 033f3ae646c0d134f816c2b9523a3e83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerStatsHolder: {fileID: 11400000, guid: 4805fbc25dd887f4ebb921f247609627, type: 2}
+  playerStatsDataHolder: {fileID: 11400000, guid: 4805fbc25dd887f4ebb921f247609627,
+    type: 2}
 --- !u!114 &2304981746235512774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -463,7 +464,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: Hel.Events.UnityEvents.UnityIUseableEvent, Assembly-CSharp, Version=0.0.0.0,
+    m_TypeName: Hel.Events.UnityEvents.UnityUseableEvent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &1361598844234892960
 GameObject:

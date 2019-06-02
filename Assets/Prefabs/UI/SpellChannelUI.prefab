@@ -380,7 +380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e81d75f437589dc42bcd5574e90c9020, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abilityChannelSystem: {fileID: 11400000, guid: 1a2f297dad6759b4e85dc2092fdd9589,
+  abilityChannelDataHolder: {fileID: 11400000, guid: 57aa93aded1df304a9c1b55ed4893463,
     type: 2}
   channelUICanvasGroup: {fileID: 7912808998818385409}
   channelBarSlider: {fileID: 967058883123389082}

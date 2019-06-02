@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2bf76dd3b34133344b69ca90407a4432, type: 3}
-  m_Name: StatsHolder_Player
+  m_Name: Player_StatsDataHolder
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2

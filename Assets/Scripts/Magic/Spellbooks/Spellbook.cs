@@ -9,7 +9,7 @@ namespace Hel.Magic.Spellbooks
 {
     public class Spellbook : SerializedMonoBehaviour
     {
-        [Required] [SerializeField] private PlayerStatsHolder playerStatsHolder;
+        [Required] [SerializeField] private PlayerStatsDataHolder playerStatsDataHolder;
         [Required] [SerializeField] private TextMeshProUGUI spellPointsText;
         [Required] [SerializeField] private List<ElementTree> elementTrees = new List<ElementTree>();
         [Required] [SerializeField] private SpellSlot[,] spellSlots = new SpellSlot[7, 3];
@@ -26,7 +26,7 @@ namespace Hel.Magic.Spellbooks
 
         public void SetSpellPointsText()
         {
-            spellPointsText.text = $"Spell Points: {playerStatsHolder.CurrencyHolder.GetCurrencyAmount(CurrencyTypes.SpellPoints)}";
+            spellPointsText.text = $"Spell Points: {playerStatsDataHolder.CurrencyHolder.GetCurrencyAmount(CurrencyTypes.SpellPoints)}";
         }
 
         public void DisplayTree(ElementTree elementTree)

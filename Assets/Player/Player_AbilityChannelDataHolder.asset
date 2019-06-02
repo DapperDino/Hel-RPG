@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea1a31ada1574ba4c9681550a7cf4c47, type: 3}
-  m_Name: AbilityCooldownSystem_Player
+  m_Script: {fileID: 11500000, guid: 11f3570294d67fd44a87e850e0a0db72, type: 3}
+  m_Name: Player_AbilityChannelDataHolder
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -21,4 +21,7 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  onCooldownStarted: {fileID: 11400000, guid: 40512d5d91d17aa4c9e239f4aadc6a02, type: 2}
+  onStartedChanneling: {fileID: 11400000, guid: ec2862fa1acd5da4fbfa9c704cb97718,
+    type: 2}
+  onFinishedChanneling: {fileID: 11400000, guid: 2489a9e3af2ca1241bbd72a7d5d98453,
+    type: 2}

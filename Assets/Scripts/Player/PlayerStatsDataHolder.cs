@@ -2,16 +2,14 @@
 using Hel.Events.CustomEvents;
 using Hel.Items;
 using Hel.SavingLoading;
-using Hel.Utilities;
 using Sirenix.OdinInspector;
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace Hel.Player
 {
     [CreateAssetMenu(fileName = "New Player Stats Holder", menuName = "Player/Stats Holder")]
-    public class PlayerStatsHolder : SerializedScriptableObject, ITickable, ISaveable
+    public class PlayerStatsDataHolder : SerializedScriptableObject, ISaveable
     {
         [Header("Events")]
         [Required] [SerializeField] private VoidEvent onPlayerHealthChanged;
@@ -64,12 +62,12 @@ namespace Hel.Player
             CurrencyHolder.OnCurrencyValuesChanged -= onPlayerCurrenciesChanged.Raise;
         }
 
-        #region Mana
-
         public void Tick()
         {
             RegenerateMana();
         }
+
+        #region Mana
 
         [Button]
         public void ResetMana()
