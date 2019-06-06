@@ -4,20 +4,27 @@ using UnityEngine.EventSystems;
 
 namespace Hel.Items.Inventories
 {
+    /// <summary>
+    /// Handles logic involved when dragging from an inventory slot.
+    /// </summary>
     public class InventoryItemDragHandler : ItemDragHandler
     {
-        [Required] [SerializeField] private GameObject inventoryPanel;
-        [Required] [SerializeField] private ItemDestroyer itemDestroyer;
+        [Required] [SerializeField] private ItemDestroyer itemDestroyer = null;
         public override void OnPointerUp(PointerEventData eventData)
         {
-            if (eventData.button != PointerEventData.InputButton.Left) { return; }
-
-            base.OnPointerUp(eventData);
-
-            if (eventData.hovered.Count <= 0)
+            //Check whether it was the left mouse button that was released.
+            if (eventData.button == PointerEventData.InputButton.Left)
             {
-                InventorySlot thisSlot = itemSlotUI as InventorySlot;
-                itemDestroyer.Activate(thisSlot.ItemSlot.item, thisSlot.SlotIndex);
+                //Handle the base logic.
+                base.OnPointerUp(eventData);
+
+                //Make sure that the cursor is not currently over any UI.
+                if (eventData.hovered.Count <= 0)
+                {
+                    //Activate the item destroyer with this item slot's data.
+                    InventorySlot thisSlot = itemSlotUI as InventorySlot;
+                    itemDestroyer.Activate(thisSlot.ItemSlot.item, thisSlot.SlotIndex);
+                }
             }
         }
     }

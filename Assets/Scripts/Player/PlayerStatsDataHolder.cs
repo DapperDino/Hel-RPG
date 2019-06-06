@@ -1,6 +1,7 @@
 ﻿using Hel.Combat;
 using Hel.Events.CustomEvents;
-using Hel.Items;
+using Hel.Items.Currencies;
+using Hel.Levelling;
 using Hel.SavingLoading;
 using Sirenix.OdinInspector;
 using System.Collections.Generic;
@@ -8,26 +9,29 @@ using UnityEngine;
 
 namespace Hel.Player
 {
+    /// <summary>
+    /// Used to bring together all stat related systems for the player.
+    /// </summary>
     [CreateAssetMenu(fileName = "New Player Stats Holder", menuName = "Player/Stats Holder")]
     public class PlayerStatsDataHolder : SerializedScriptableObject, ISaveable
     {
         [Header("Events")]
-        [Required] [SerializeField] private VoidEvent onPlayerHealthChanged;
-        [Required] [SerializeField] private VoidEvent onPlayerManaChanged;
-        [Required] [SerializeField] private VoidEvent onPlayerDied;
-        [Required] [SerializeField] private VoidEvent onPlayerExperienceChanged;
-        [Required] [SerializeField] private VoidEvent onPlayerLevelUp;
-        [Required] [SerializeField] private VoidEvent onPlayerCurrenciesChanged;
+        [Required] [SerializeField] private VoidEvent onPlayerHealthChanged = null;
+        [Required] [SerializeField] private VoidEvent onPlayerManaChanged = null;
+        [Required] [SerializeField] private VoidEvent onPlayerDied = null;
+        [Required] [SerializeField] private VoidEvent onPlayerExperienceChanged = null;
+        [Required] [SerializeField] private VoidEvent onPlayerLevelUp = null;
+        [Required] [SerializeField] private VoidEvent onPlayerCurrenciesChanged = null;
 
         [Header("Data Holders")]
-        [Required] [SerializeField] private StatsHolder defaultStats;
-        [Required] [SerializeField] private CurrencyHolder defaultCurrencies;
+        [Required] [SerializeField] private StatsHolder defaultStats = null;
+        [Required] [SerializeField] private CurrencyHolder defaultCurrencies = null;
 
         [Header("On Level Up")]
         [Required] [SerializeField] private Dictionary<Stat, StatModifier> levelUpStatChanges = new Dictionary<Stat, StatModifier>();
         [Required] [SerializeField] private Dictionary<Currency, int> levelUpCurrencyChanges = new Dictionary<Currency, int>();
 
-        private float mana;
+        private float mana = 0f;
 
         public StatsHolder StatsHolder { get; private set; } = new StatsHolder();
         public LevelSystem LevelSystem { get; } = new LevelSystem();
@@ -46,6 +50,7 @@ namespace Hel.Player
 
         private void OnEnable()
         {
+            //Subscribe events.
             StatsHolder.OnHealthChanged += onPlayerHealthChanged.Raise;
             StatsHolder.OnDied += onPlayerDied.Raise;
             LevelSystem.OnExperienceGained += onPlayerExperienceChanged.Raise;
@@ -55,6 +60,7 @@ namespace Hel.Player
 
         private void OnDisable()
         {
+            //Un-subscribe events.
             StatsHolder.OnHealthChanged -= onPlayerHealthChanged.Raise;
             StatsHolder.OnDied -= onPlayerDied.Raise;
             LevelSystem.OnExperienceGained -= onPlayerExperienceChanged.Raise;
@@ -126,6 +132,7 @@ namespace Hel.Player
             {
                 JsonUtility.FromJsonOverwrite(JsonUtility.ToJson(defaultStats), StatsHolder);
             }
+
             StatsHolder.SetAllDirty();
             onPlayerHealthChanged.Raise();
             onPlayerManaChanged.Raise();

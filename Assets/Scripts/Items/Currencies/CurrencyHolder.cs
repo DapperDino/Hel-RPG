@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Hel.Items
+namespace Hel.Items.Currencies
 {
+    /// <summary>
+    /// Stores and handles all of an entity's currencies.
+    /// </summary>
     [Serializable]
     public class CurrencyHolder
     {
@@ -15,9 +18,9 @@ namespace Hel.Items
         {
             for (int i = 0; i < currencyData.Count; i++)
             {
-                if (currencyData[i].currency.CurrencyType == currencyType)
+                if (currencyData[i].Currency.CurrencyType == currencyType)
                 {
-                    currencyData[i].amount += amount;
+                    currencyData[i].Amount += amount;
                     OnCurrencyValuesChanged.Invoke();
                     return;
                 }
@@ -27,9 +30,9 @@ namespace Hel.Items
         {
             for (int i = 0; i < currencyData.Count; i++)
             {
-                if (currencyData[i].currency == currency)
+                if (currencyData[i].Currency == currency)
                 {
-                    currencyData[i].amount += amount;
+                    currencyData[i].Amount += amount;
                     OnCurrencyValuesChanged.Invoke();
                     return;
                 }
@@ -40,7 +43,7 @@ namespace Hel.Items
         {
             foreach (CurrencyData data in currencyData)
             {
-                if (data.currency.CurrencyType == currencyType)
+                if (data.Currency.CurrencyType == currencyType)
                 {
                     return data;
                 }
@@ -51,7 +54,7 @@ namespace Hel.Items
         {
             foreach (CurrencyData data in currencyData)
             {
-                if (data.currency == currency)
+                if (data.Currency == currency)
                 {
                     return data;
                 }
@@ -63,9 +66,9 @@ namespace Hel.Items
         {
             foreach (CurrencyData data in currencyData)
             {
-                if (data.currency.CurrencyType == currencyType)
+                if (data.Currency.CurrencyType == currencyType)
                 {
-                    return data.amount;
+                    return data.Amount;
                 }
             }
             return 0;
@@ -74,9 +77,9 @@ namespace Hel.Items
         {
             foreach (CurrencyData data in currencyData)
             {
-                if (data.currency == currency)
+                if (data.Currency == currency)
                 {
-                    return data.amount;
+                    return data.Amount;
                 }
             }
             return 0;

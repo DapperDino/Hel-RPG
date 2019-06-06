@@ -4,9 +4,12 @@ using UnityEngine;
 
 namespace Hel.Inputs
 {
+    /// <summary>
+    /// Used to handle the player's input.
+    /// </summary>
     public class PlayerInputManager : MonoBehaviour
     {
-        [Required] [SerializeField] private IntEvent onNumberKeyPressed;
+        [Required] [SerializeField] private IntEvent onNumberKeyPressed = null;
 
         private static bool isInputBlocked = false;
 

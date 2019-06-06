@@ -2,6 +2,9 @@
 
 namespace Hel.Targeting
 {
+    /// <summary>
+    /// Defines any entity that can be targeted.
+    /// </summary>
     public interface ITargetable
     {
         string name { get; }

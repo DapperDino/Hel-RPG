@@ -6,16 +6,18 @@ using System.Linq;
 using System.Runtime.Serialization;
 using UnityEngine;
 
+/// <summary>
+/// Used to handle saving and loading.
+/// </summary>
 public class GameSaveHandler : SerializedMonoBehaviour
 {
     [Required] [SerializeField] private List<ISaveable> scriptableObjectsToSave = new List<ISaveable>();
 
     public static string GetSaveDataPath() { return $"{Application.persistentDataPath}/save_data"; }
 
-    private void Awake()
-    {
-        LoadGame();
-    }
+    private void Awake() => LoadGame();
+
+    public static void RemoveFile(string path) => File.Delete($"{GetSaveDataPath()}/{path}.json");
 
     [Button]
     public void SaveGame()
@@ -77,6 +79,4 @@ public class GameSaveHandler : SerializedMonoBehaviour
         }
         return true;
     }
-
-    public static void RemoveFile(string path) => File.Delete($"{GetSaveDataPath()}/{path}.json");
 }

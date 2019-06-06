@@ -5,6 +5,9 @@ using UnityEngine;
 
 namespace Hel.Targeting
 {
+    /// <summary>
+    /// Placeholder class to display what is currently being targeted.
+    /// </summary>
     public class TargetingUI : MonoBehaviour
     {
         [Required] [SerializeField] private GameObject targetingUI = null;

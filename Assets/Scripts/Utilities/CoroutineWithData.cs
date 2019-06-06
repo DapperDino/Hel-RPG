@@ -2,6 +2,9 @@
 
 namespace Hel.Utilities
 {
+    /// <summary>
+    /// Used to pass data back from Coroutines.
+    /// </summary>
     public class CoroutineWithData
     {
         public object Result { get; private set; }

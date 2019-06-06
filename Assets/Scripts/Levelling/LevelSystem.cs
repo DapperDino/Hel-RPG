@@ -1,8 +1,11 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Hel.Player
+namespace Hel.Levelling
 {
+    /// <summary>
+    /// Stores and handles all of an entity's level data.
+    /// </summary>
     [Serializable]
     public class LevelSystem
     {
@@ -21,9 +24,13 @@ namespace Hel.Player
 
         public void AddExperience(int experienceToAdd)
         {
+            //Increase our experience.
             currentExperience += experienceToAdd;
+
+            //Alert any listeners that experience has been gained.
             OnExperienceGained.Invoke();
 
+            //Check whether we have enough experience to level up.
             while (currentExperience >= ExperienceForLevelUp)
             {
                 LevelUp();
@@ -32,8 +39,13 @@ namespace Hel.Player
 
         private void LevelUp()
         {
+            //Reduce our current experience.
             currentExperience -= ExperienceForLevelUp;
+
+            //Increase our level.
             level++;
+
+            //Alert any listeners that we have levelled up.
             OnLevelUp.Invoke();
         }
     }

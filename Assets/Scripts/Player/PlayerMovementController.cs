@@ -4,25 +4,28 @@ using UnityEngine;
 
 namespace Hel.Player
 {
+    /// <summary>
+    /// Used to handle player movement.
+    /// </summary>
     [RequireComponent(typeof(CharacterController))]
     [RequireComponent(typeof(Animator))]
     public class PlayerMovementController : MonoBehaviour
     {
         [SerializeField] private float movementSpeed = 3f;
         [SerializeField] private float speedSmoothTime = 0.1f;
-        [SerializeField] private float targetDistance;
+        [SerializeField] private float targetDistance = 5f;
 
-        private CharacterController characterController;
-        private Animator animator;
-        private Transform mainCameraTransform;
+        private CharacterController characterController = null;
+        private Animator animator = null;
+        private Transform mainCameraTransform = null;
 
-        private Vector3 currentImpact;
-        private Vector3 targetPosition;
-        private Transform chestTransform;
-        private float velocityY;
-        private float speedSmoothVelocity;
-        private float currentSpeed;
-        private float deltaTime;
+        private Vector3 currentImpact = new Vector3();
+        private Vector3 targetPosition = new Vector3();
+        private Transform chestTransform = null;
+        private float velocityY = 0f;
+        private float speedSmoothVelocity = 0f;
+        private float currentSpeed = 0f;
+        private float deltaTime = 0f;
 
         private readonly float gravity = Physics.gravity.y;
 

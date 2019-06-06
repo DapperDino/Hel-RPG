@@ -1,4 +1,4 @@
-﻿using Hel.Items;
+﻿using Hel.Items.Inventories;
 using Hel.Player;
 using Sirenix.OdinInspector;
 using System;

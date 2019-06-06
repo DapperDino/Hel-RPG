@@ -1,21 +1,26 @@
-﻿using Sirenix.OdinInspector;
-using UnityEngine;
-using UnityEngine.EventSystems;
+﻿using UnityEngine.EventSystems;
 
 namespace Hel.Items.Hotbars
 {
+    /// <summary>
+    /// Handles logic involved when dragging from a hotbar slot.
+    /// </summary>
     public class HotbarItemDragHandler : ItemDragHandler
     {
-        [Required] [SerializeField] private GameObject hotbarPanel;
         public override void OnPointerUp(PointerEventData eventData)
         {
-            if (eventData.button != PointerEventData.InputButton.Left) { return; }
-
-            base.OnPointerUp(eventData);
-
-            if (!eventData.hovered.Contains(hotbarPanel))
+            //Check whether it was the left mouse button that was released.
+            if (eventData.button == PointerEventData.InputButton.Left)
             {
-                (itemSlotUI as HotbarSlot).SlotItem = null;
+                //Handle the base logic.
+                base.OnPointerUp(eventData);
+
+                //Make sure that the cursor is not currently over any UI.
+                if (eventData.hovered.Count == 0)
+                {
+                    //Clear the slot.
+                    (itemSlotUI as HotbarSlot).SlotItem = null;
+                }
             }
         }
     }

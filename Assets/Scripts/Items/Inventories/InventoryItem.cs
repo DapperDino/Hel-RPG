@@ -2,14 +2,17 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace Hel.Items
+namespace Hel.Items.Inventories
 {
+    /// <summary>
+    /// The base class for anything that is able to go in an inventory.
+    /// </summary>
     public abstract class InventoryItem : HotbarItem
     {
         [Header("Item Data")]
-        [Required] [SerializeField] private Rarity rarity;
-        [SerializeField] private int sellPrice = 1;
-        [SerializeField] private int maxStack = 1;
+        [Required] [SerializeField] private Rarity rarity = null;
+        [MinValue(0)] [SerializeField] private int sellPrice = 1;
+        [MinValue(0)] [SerializeField] private int maxStack = 1;
 
         public override string ColouredName
         {

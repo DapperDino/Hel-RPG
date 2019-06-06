@@ -7,13 +7,21 @@ using UnityEditor;
 
 namespace Hel.Menus
 {
+    /// <summary>
+    /// Used to handle pausing.
+    /// </summary>
     public class PauseMenu : MonoBehaviour
     {
         public static bool IsPaused { get; private set; } = false;
 
-        [Required] [SerializeField] private GameObject pauseCanvas;
+        [Required] [SerializeField] private GameObject pauseCanvas = null;
 
         private void Update()
+        {
+            CheckForPauseInput();
+        }
+
+        private void CheckForPauseInput()
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {

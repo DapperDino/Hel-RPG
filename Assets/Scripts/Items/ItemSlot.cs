@@ -1,7 +1,11 @@
-﻿using System;
+﻿using Hel.Items.Inventories;
+using System;
 
 namespace Hel.Items
 {
+    /// <summary>
+    /// Stores the data for an instance of an item.
+    /// </summary>
     [Serializable]
     public struct ItemSlot
     {

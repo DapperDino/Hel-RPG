@@ -9,13 +9,16 @@ using UnityEngine;
 
 namespace Hel.Magic
 {
+    /// <summary>
+    /// Used to store data about different spells.
+    /// </summary>
     [CreateAssetMenu(fileName = "New Spell", menuName = "Magic/Spell")]
     public class Spell : HotbarItem, IUseable, ICooldownable, IChannelable
     {
         [Header("Spell Data")]
         [SerializeField] private string description = "New Spell Description";
-        [Required] [SerializeField] private UseableEvent onUseablePressed;
-        [Required] [SerializeField] private ElementTree elementTree;
+        [Required] [SerializeField] private UseableEvent onUseablePressed = null;
+        [Required] [SerializeField] private ElementTree elementTree = null;
         [MinValue(0f)] [SerializeField] private float maxCooldownDuration = 1f;
         [MinValue(0f)] [SerializeField] private float channelDuration = 1f;
 
@@ -52,9 +55,6 @@ namespace Hel.Magic
             return builder.ToString();
         }
 
-        public void Use()
-        {
-            onUseablePressed.Raise(this);
-        }
+        public void Use() => onUseablePressed.Raise(this);
     }
 }

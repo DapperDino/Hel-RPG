@@ -1,4 +1,4 @@
-﻿using Hel.Items;
+﻿using Hel.Items.Currencies;
 using Hel.Player;
 using Sirenix.OdinInspector;
 using System.Collections.Generic;
@@ -7,16 +7,19 @@ using UnityEngine;
 
 namespace Hel.Magic.Spellbooks
 {
+    /// <summary>
+    /// TODO Split into smaller components.
+    /// </summary>
     public class Spellbook : SerializedMonoBehaviour
     {
-        [Required] [SerializeField] private PlayerStatsDataHolder playerStatsDataHolder;
-        [Required] [SerializeField] private TextMeshProUGUI spellPointsText;
+        [Required] [SerializeField] private PlayerStatsDataHolder playerStatsDataHolder = null;
+        [Required] [SerializeField] private TextMeshProUGUI spellPointsText = null;
         [Required] [SerializeField] private List<ElementTree> elementTrees = new List<ElementTree>();
         [Required] [SerializeField] private SpellSlot[,] spellSlots = new SpellSlot[7, 3];
 
         private void Start()
         {
-            if (elementTrees.Count >= 1)
+            if (elementTrees[0] != null)
             {
                 DisplayTree(elementTrees[0]);
             }

@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe3b4fd48debb104f8db8e17dc636b78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 11400000, guid: 5fb2738e127dfa7458b6f102afab9d44, type: 2}
+  playerInventory: {fileID: 11400000, guid: 5fb2738e127dfa7458b6f102afab9d44, type: 2}
   ammunitionType: {fileID: 11400000, guid: 4e72125badbcc2b48b65ef95f168254e, type: 2}
   arrowSpawnTransform: {fileID: 1292842809}
   layerMask:

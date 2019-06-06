@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace Hel.Player
 {
+    /// <summary>
+    /// TODO Remove
+    /// </summary>
     public class PlayerInteractableRaycaster : MonoBehaviour
     {
         [SerializeField] private float raycastRange;

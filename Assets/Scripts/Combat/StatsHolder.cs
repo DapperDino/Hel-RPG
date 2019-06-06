@@ -5,11 +5,14 @@ using UnityEngine;
 
 namespace Hel.Combat
 {
+    /// <summary>
+    /// Stores and handles all of an entity's stats.
+    /// </summary>
 
     [Serializable]
     public class StatsHolder
     {
-        [SerializeField] private int health;
+        [SerializeField] private int health = 0;
         [Required] [SerializeField] private List<StatData> statData = new List<StatData>();
 
         public Action OnHealthChanged = delegate { };
@@ -26,21 +29,34 @@ namespace Hel.Combat
 
         public void DealDamage(DamageData damageData)
         {
+            //Subtract the damage being dealt from our health.
             Health -= damageData.rawDamage;
+
+            //Make sure that our health stays in the range of 0 to max health.
             Health = Mathf.Clamp(Health, 0, GetStatValue(StatTypes.MaxHealth));
+
+            //Alert any listeners that we have died.
             if (Health == 0) { OnDied.Invoke(); }
+
+            //Alert any listeners that our health has been changed.
             OnHealthChanged.Invoke();
         }
 
         public void Heal(int healAmount)
         {
+            //Add the heal amount to our health.
             Health += healAmount;
+
+            //Make sure that our health stays in the range of 0 to max health.
             Health = Mathf.Clamp(Health, 0, GetStatValue(StatTypes.MaxHealth));
+
+            //Alert any listeners that our health has been changed.
             OnHealthChanged.Invoke();
         }
 
         public void SetAllDirty()
         {
+            //Set all of our stats to dirty (to be recalculated).
             foreach (StatData data in statData)
             {
                 data.SetDirty();

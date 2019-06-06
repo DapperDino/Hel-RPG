@@ -1,16 +1,20 @@
 ﻿using Hel.Combat;
+using Hel.Items.Inventories;
 using Sirenix.OdinInspector;
 using System.Text;
 using UnityEngine;
 
 namespace Hel.Items
 {
+    /// <summary>
+    /// Used to store data about different types of ammunition.
+    /// </summary>
     [CreateAssetMenu(fileName = "New Ammunition", menuName = "Items/Ammunition")]
     public class AmmunitionItem : InventoryItem
     {
         [Header("Ammunition Data")]
-        [SerializeField] private AmmunitionType ammunitionType;
-        [InlineEditor(InlineEditorModes.LargePreview)] [SerializeField] private GameObject ammunitionPrefab;
+        [Required] [SerializeField] private AmmunitionType ammunitionType = null;
+        [Required] [InlineEditor(InlineEditorModes.LargePreview)] [SerializeField] private GameObject ammunitionPrefab = null;
 
         public AmmunitionType AmmunitionType { get { return ammunitionType; } }
         public GameObject AmmunitionPrefab { get { return ammunitionPrefab; } }

@@ -6,15 +6,18 @@ using UnityEngine.UI;
 
 namespace Hel.Player
 {
+    /// <summary>
+    /// Used to display the player's stats to the HUD.
+    /// </summary>
     public class PlayerHUDStatsUI : MonoBehaviour
     {
-        [Required] [SerializeField] private PlayerStatsDataHolder playerStatsDataHolder;
-        [Required] [SerializeField] private Slider healthbarSlider;
-        [Required] [SerializeField] private TextMeshProUGUI healthbarSliderText;
-        [Required] [SerializeField] private Slider manabarSlider;
-        [Required] [SerializeField] private TextMeshProUGUI manabarSliderText;
-        [Required] [SerializeField] private Image experienceImage;
-        [Required] [SerializeField] private TextMeshProUGUI playerLevelText;
+        [Required] [SerializeField] private PlayerStatsDataHolder playerStatsDataHolder = null;
+        [Required] [SerializeField] private Slider healthbarSlider = null;
+        [Required] [SerializeField] private TextMeshProUGUI healthbarSliderText = null;
+        [Required] [SerializeField] private Slider manabarSlider = null;
+        [Required] [SerializeField] private TextMeshProUGUI manabarSliderText = null;
+        [Required] [SerializeField] private Image experienceImage = null;
+        [Required] [SerializeField] private TextMeshProUGUI playerLevelText = null;
 
         private void Start()
         {

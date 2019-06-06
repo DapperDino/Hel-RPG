@@ -4,6 +4,9 @@ using UnityEngine.EventSystems;
 
 namespace Hel.Magic.Spellbooks
 {
+    /// <summary>
+    /// Handles logic involved with the spell slot itself.
+    /// </summary>
     public class SpellSlot : ItemSlotUI
     {
         private Spell spell;
@@ -24,8 +27,9 @@ namespace Hel.Magic.Spellbooks
 
         public override void UpdateSlotUI()
         {
+            //Make sure we have a spell.
             if (spell == null)
-            {
+            {   //Disable our slot UI.
                 EnableSlotUI(false);
                 return;
             }
@@ -38,7 +42,6 @@ namespace Hel.Magic.Spellbooks
         protected override void EnableSlotUI(bool enable)
         {
             base.EnableSlotUI(enable);
-
             gameObject.SetActive(enable);
         }
     }

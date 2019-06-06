@@ -2,6 +2,9 @@
 
 namespace Hel.Combat
 {
+    /// <summary>
+    /// Used to store data about different types of ammunition.
+    /// </summary>
     [CreateAssetMenu(fileName = "New Ammunition Type", menuName = "Combat/Ammunition Type")]
     public class AmmunitionType : ScriptableObject
     {

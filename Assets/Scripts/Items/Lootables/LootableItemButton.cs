@@ -8,22 +8,22 @@ using UnityEngine.UI;
 
 namespace Hel.Items.Lootables
 {
-    public class LootableItemButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
+    /// <summary>
+    /// Handles interactions with lootable item buttons.
+    /// </summary>
+    public class LootableItemButton : MonoBehaviour, IPointerEnterHandler, IPointerClickHandler, IPointerExitHandler
     {
-        [Required] [SerializeField] private TextMeshProUGUI itemNameText;
-        [Required] [SerializeField] private Image itemIconImage;
-        [Required] [SerializeField] private TextMeshProUGUI itemQuantityText;
-        [Required] [SerializeField] private PlayerInventory playerInventory;
-        [Required] [SerializeField] private HotbarItemEvent onMouseStartHoverItem;
-        [Required] [SerializeField] private VoidEvent onMouseEndHoverItem;
+        [Required] [SerializeField] private TextMeshProUGUI itemNameText = null;
+        [Required] [SerializeField] private Image itemIconImage = null;
+        [Required] [SerializeField] private TextMeshProUGUI itemQuantityText = null;
+        [Required] [SerializeField] private PlayerInventory playerInventory = null;
+        [Required] [SerializeField] private HotbarItemEvent onMouseStartHoverItem = null;
+        [Required] [SerializeField] private VoidEvent onMouseEndHoverItem = null;
 
-        private LootableItemsDisplayer lootableItemsDisplayer;
-        private ItemSlot itemSlot;
+        private LootableItemsDisplayer lootableItemsDisplayer = null;
+        private ItemSlot itemSlot = new ItemSlot();
 
-        private void OnDisable()
-        {
-            onMouseEndHoverItem.Raise();
-        }
+        private void OnDisable() => onMouseEndHoverItem.Raise();
 
         public void Initialise(LootableItemsDisplayer lootableItemsDisplayer, ItemSlot itemSlot)
         {
@@ -33,22 +33,27 @@ namespace Hel.Items.Lootables
             UpdateUI();
         }
 
-        public void OnPointerClick(PointerEventData eventData)
-        {
-            Loot();
-        }
+        public void OnPointerEnter(PointerEventData eventData) => onMouseStartHoverItem.Raise(itemSlot.item);
+
+        public void OnPointerClick(PointerEventData eventData) => Loot();
+
+        public void OnPointerExit(PointerEventData eventData) => onMouseEndHoverItem.Raise();
 
         public void Loot()
         {
+            //Add the item to the player's inventory.
             itemSlot = playerInventory.ItemHolder.AddItem(itemSlot);
 
+            //Check to see if all of the item was added to the inventory.
             if (itemSlot.quantity <= 0)
             {
                 Destroy(gameObject);
             }
 
+            //Update the panel's UI
             lootableItemsDisplayer.UpdateItemSlot(itemSlot);
 
+            //Update our UI
             UpdateUI();
         }
 
@@ -57,16 +62,6 @@ namespace Hel.Items.Lootables
             itemNameText.text = itemSlot.item.ColouredName;
             itemIconImage.sprite = itemSlot.item.Icon;
             itemQuantityText.text = itemSlot.quantity.ToString();
-        }
-
-        public void OnPointerEnter(PointerEventData eventData)
-        {
-            onMouseStartHoverItem.Raise(itemSlot.item);
-        }
-
-        public void OnPointerExit(PointerEventData eventData)
-        {
-            onMouseEndHoverItem.Raise();
         }
     }
 }

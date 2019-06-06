@@ -3,13 +3,17 @@ using UnityEngine.Animations;
 
 namespace Hel.Extensions
 {
+    /// <summary>
+    /// Used to allow more control over the StateMachineBehaviour system.
+    /// </summary>
+    /// <typeparam name="TMonoBehaviour"></typeparam>
     public class SceneLinkedSMB<TMonoBehaviour> : SealedSMB
     where TMonoBehaviour : MonoBehaviour
     {
-        protected TMonoBehaviour monoBehaviour;
+        protected TMonoBehaviour monoBehaviour = null;
 
-        bool firstFrameHappened;
-        bool lastFrameHappened;
+        bool firstFrameHappened = false;
+        bool lastFrameHappened = false;
 
         public static void Initialise(Animator animator, TMonoBehaviour monoBehaviour)
         {
