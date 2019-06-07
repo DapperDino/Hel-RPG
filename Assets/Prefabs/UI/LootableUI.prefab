@@ -212,7 +212,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_ScrollSensitivity: 10
   m_Viewport: {fileID: 170210046}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 1455258433}
@@ -970,7 +970,7 @@ GameObject:
   - component: {fileID: 53814354551452351}
   - component: {fileID: 2036322434043273242}
   m_Layer: 0
-  m_Name: LootablePopup
+  m_Name: LootableUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

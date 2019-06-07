@@ -12,7 +12,7 @@ namespace Hel.Player
     /// <summary>
     /// Used to bring together all stat related systems for the player.
     /// </summary>
-    [CreateAssetMenu(fileName = "New Player Stats Holder", menuName = "Player/Stats Holder")]
+    [CreateAssetMenu(fileName = "New Player Stats Holder", menuName = "Player/Stats Data Holder")]
     public class PlayerStatsDataHolder : SerializedScriptableObject, ISaveable
     {
         [Header("Events")]

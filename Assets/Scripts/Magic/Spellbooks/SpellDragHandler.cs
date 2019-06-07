@@ -24,7 +24,6 @@ namespace Hel.Magic.Spellbooks
                 if (Input.GetKey(KeyCode.LeftShift))
                 {
                     //Alert any listeners that we wish to equip this spell.
-                    //TODO Rename
                     onSpellEquipPressed.Raise(ItemSlotUI.SlotItem);
                 }
             }

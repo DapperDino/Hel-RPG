@@ -5,7 +5,7 @@ namespace Hel.Items.Currencies
     /// <summary>
     /// Used to store data about different types of currencies.
     /// </summary>
-    [CreateAssetMenu]
+    [CreateAssetMenu(fileName = "New Currency", menuName = "Items/Currencies/Currency")]
     public class Currency : ScriptableObject
     {
         [SerializeField] private CurrencyTypes currencyType = CurrencyTypes.None;

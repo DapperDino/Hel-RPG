@@ -1,12 +1,12 @@
 ﻿namespace Hel.Interactables
 {
     /// <summary>
-    /// Defines what happens when an entity is interacted with.
+    /// Defines any entity that can be interacted with.
     /// </summary>
     public interface IInteractable
     {
-        void StartHover();
+        string InteractionText { get; }
+
         void Interact();
-        void EndHover();
     }
 }

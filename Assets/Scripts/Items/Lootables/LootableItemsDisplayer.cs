@@ -1,5 +1,4 @@
-﻿using Hel.Interactables;
-using Sirenix.OdinInspector;
+﻿using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Hel.Items.Lootables
@@ -17,9 +16,6 @@ namespace Hel.Items.Lootables
 
         public void DisplayItems(Lootable lootable)
         {
-            //Make sure there is at least one item slot.
-            if (lootable.ItemSlots.Count <= 0) { return; }
-
             //Loop through all of the item slots.
             foreach (ItemSlot itemSlot in lootable.ItemSlots)
             {
@@ -42,6 +38,11 @@ namespace Hel.Items.Lootables
             {
                 //Attempt to loot the button.
                 child.GetComponent<LootableItemButton>().Loot();
+            }
+
+            if (lootable.ItemSlots.Count <= 0)
+            {
+                Close();
             }
         }
 
@@ -73,10 +74,6 @@ namespace Hel.Items.Lootables
                     if (newSlot.quantity <= 0)
                     {
                         lootable.ItemSlots.Remove(newSlot);
-                        if (lootable.ItemSlots.Count <= 0)
-                        {
-                            Close();
-                        }
                     }
 
                     return;

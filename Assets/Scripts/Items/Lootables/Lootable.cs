@@ -1,30 +1,27 @@
 ﻿using Hel.Events.CustomEvents;
-using Hel.Items;
+using Hel.Interactables;
 using Sirenix.OdinInspector;
-using Sirenix.Serialization;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Hel.Interactables
+namespace Hel.Items.Lootables
 {
     /// <summary>
     /// Handles interaction with any lootable entity.
     /// </summary>
-    public class Lootable : SerializedMonoBehaviour, IInteractable
+    public class Lootable : MonoBehaviour, IInteractable
     {
         [Required] [SerializeField] private LootableEvent onLootableStartLooting = null;
+        [Required] [SerializeField] private List<ItemSlot> itemSlots = new List<ItemSlot>();
 
-        [OdinSerialize] public List<ItemSlot> ItemSlots { get; private set; } = new List<ItemSlot>();
-
-        public void StartHover() { }
+        public string InteractionText { get { return "Loot"; } }
+        public List<ItemSlot> ItemSlots { get { return itemSlots; } }
 
         public void Interact()
         {
             //Alert any listeners that we have started being looted.
             onLootableStartLooting.Raise(this);
         }
-
-        public void EndHover() { }
     }
 }
 

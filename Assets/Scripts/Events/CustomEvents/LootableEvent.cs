@@ -1,4 +1,4 @@
-﻿using Hel.Interactables;
+﻿using Hel.Items.Lootables;
 using UnityEngine;
 
 namespace Hel.Events.CustomEvents

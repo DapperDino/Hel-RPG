@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 4398435373437267405}
   - component: {fileID: 7912808998818385409}
   m_Layer: 5
-  m_Name: SpellChannelCanvas
+  m_Name: AbilityChannelCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -346,8 +346,9 @@ GameObject:
   - component: {fileID: 8321382863514124854}
   - component: {fileID: 220260183}
   - component: {fileID: 220260182}
+  - component: {fileID: 4299634728324673176}
   m_Layer: 0
-  m_Name: SpellChannelUI
+  m_Name: AbilityChannelUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -382,10 +383,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   abilityChannelDataHolder: {fileID: 11400000, guid: 57aa93aded1df304a9c1b55ed4893463,
     type: 2}
-  channelUICanvasGroup: {fileID: 7912808998818385409}
   channelBarSlider: {fileID: 967058883123389082}
-  spellNameText: {fileID: 8126218909512878703}
-  fadeTime: 0.2
+  abilityNameText: {fileID: 8126218909512878703}
 --- !u!114 &220260183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -444,6 +443,25 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: Hel.Events.UnityEvents.UnityChannelableEvent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!95 &4299634728324673176
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6067633137672601067}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4a9af55419b8e544295538ff16d2a0d0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8846448072467878749
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,7 +509,7 @@ GameObject:
   - component: {fileID: 1570329189748290390}
   - component: {fileID: 8126218909512878703}
   m_Layer: 5
-  m_Name: SpellNameText
+  m_Name: AbilityNameText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

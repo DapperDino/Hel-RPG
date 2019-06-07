@@ -1,6 +1,6 @@
 ﻿using Hel.Events.CustomEvents;
 using Hel.Events.UnityEvents;
-using Hel.Interactables;
+using Hel.Items.Lootables;
 
 namespace Hel.Events.Listeners
 {

@@ -1,6 +1,7 @@
 ﻿using Hel.Combat;
 using Hel.Items.Inventories;
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Hel.Items
@@ -129,7 +130,7 @@ namespace Hel.Items
 
                                 //Alert any listeners that the items have been updated.
                                 OnItemsUpdated.Invoke();
-                                
+
                                 return;
                             }
                         }
@@ -208,7 +209,31 @@ namespace Hel.Items
             return false;
         }
 
-        public int GetTotalCount(InventoryItem desiredItem)
+        public bool CanAddAllItems(List<ItemSlot> itemSlotsToAdd)
+        {
+            ItemSlot[] cachedSlots = itemSlots.Clone() as ItemSlot[];
+
+            bool success = true;
+
+            for (int i = 0; i < itemSlotsToAdd.Count; i++)
+            {
+                ItemSlot addedSlot = AddItem(itemSlotsToAdd[i]);
+
+                if (addedSlot.quantity != 0)
+                {
+                    success = false;
+                    break;
+                }
+            }
+
+            itemSlots = cachedSlots;
+
+            OnItemsUpdated.Invoke();
+
+            return success;
+        }
+
+        public int GetTotalQuantity(InventoryItem desiredItem)
         {
             int totalCount = 0;
 
@@ -242,7 +267,7 @@ namespace Hel.Items
         {
             AmmunitionData ammunitionData = new AmmunitionData();
 
-            foreach(ItemSlot itemSlot in ItemSlots)
+            foreach (ItemSlot itemSlot in ItemSlots)
             {
                 AmmunitionItem ammunitionItem = itemSlot.item as AmmunitionItem;
 

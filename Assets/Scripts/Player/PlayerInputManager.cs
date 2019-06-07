@@ -121,6 +121,15 @@ namespace Hel.Inputs
                 return Input.anyKey;
             }
         }
+        public static bool Interact
+        {
+            get
+            {
+                if (isInputBlocked) { return false; }
+
+                return Input.GetKeyDown(KeyCode.E);
+            }
+        }
 
         private void Update()
         {

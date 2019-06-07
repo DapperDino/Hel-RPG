@@ -7,33 +7,34 @@ using UnityEngine.UI;
 namespace Hel.Abilities
 {
     /// <summary>
-    /// 
+    /// Used to display item channelling progress.
     /// </summary>
     public class AbilityChannelUI : MonoBehaviour
     {
         [Required] [SerializeField] private AbilityChannelDataHolder abilityChannelDataHolder = null;
-        [Required] [SerializeField] private CanvasGroup channelUICanvasGroup = null;
         [Required] [SerializeField] private Slider channelBarSlider = null;
-        [Required] [SerializeField] private TextMeshProUGUI spellNameText = null;
-        [SerializeField] private float fadeTime = 0.25f;
+        [Required] [SerializeField] private TextMeshProUGUI abilityNameText = null;
 
-        public void StartChannelUI()
-        {
-            StartCoroutine(HandleChannelUI());
-        }
+        private Animator animator = null;
+
+        private static readonly int hashFadeIn = Animator.StringToHash("FadeIn");
+
+        private void Start() => animator = GetComponent<Animator>();
+
+        public void StartChannelUI() => StartCoroutine(HandleChannelUI());
 
         public void InterruptChannel()
         {
             StopAllCoroutines();
             abilityChannelDataHolder.Finish();
-            StartCoroutine(Fade(false));
+            animator.SetBool(hashFadeIn, false);
         }
 
         private IEnumerator HandleChannelUI()
         {
-            StartCoroutine(Fade(true));
+            animator.SetBool(hashFadeIn, true);
 
-            spellNameText.text = abilityChannelDataHolder.CurrentChannelable.Name;
+            abilityNameText.text = abilityChannelDataHolder.CurrentChannelable.Name;
 
             while (!abilityChannelDataHolder.FinishedChanneling)
             {
@@ -42,21 +43,9 @@ namespace Hel.Abilities
                 yield return null;
             }
 
-            StartCoroutine(Fade(false));
-        }
+            channelBarSlider.value = 1f;
 
-        private IEnumerator Fade(bool fadeIn)
-        {
-            float currentAlpha = channelUICanvasGroup.alpha;
-            int targetAlpha = fadeIn ? 1 : 0;
-
-            for (float t = 0; t < fadeTime; t += Time.deltaTime)
-            {
-                channelUICanvasGroup.alpha = Mathf.Lerp(currentAlpha, targetAlpha, t / fadeTime);
-                yield return null;
-            }
-
-            channelUICanvasGroup.alpha = targetAlpha;
+            animator.SetBool(hashFadeIn, false);
         }
     }
 }

@@ -118,7 +118,7 @@ namespace Hel.Items.Hotbars
                 if (playerInventory.ItemHolder.HasItem(inventoryItem))
                 {
                     //Get the quantity of the item and set the quantity text accordingly.
-                    int quantityCount = playerInventory.ItemHolder.GetTotalCount(inventoryItem);
+                    int quantityCount = playerInventory.ItemHolder.GetTotalQuantity(inventoryItem);
                     itemQuantityText.text = quantityCount > 1 ? quantityCount.ToString() : "";
                 }
                 else

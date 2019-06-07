@@ -1,4 +1,5 @@
 ﻿using Hel.Items.Inventories;
+using Sirenix.OdinInspector;
 using System;
 
 namespace Hel.Items
@@ -10,7 +11,7 @@ namespace Hel.Items
     public struct ItemSlot
     {
         public InventoryItem item;
-        public int quantity;
+        [MinValue(1)] public int quantity;
 
         public ItemSlot(InventoryItem item, int quantity)
         {
