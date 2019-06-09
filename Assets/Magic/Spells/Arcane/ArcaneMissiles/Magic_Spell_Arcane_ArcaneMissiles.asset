@@ -200,7 +200,7 @@ MonoBehaviour:
       Entry: 8
       Data: 
   name: Arcane Missiles
-  icon: {fileID: 21300000, guid: 801e4ae61112f004ba1b04c0df0f3b85, type: 3}
+  icon: {fileID: 21300000, guid: 7ea901111528a2b40838f6c10670754c, type: 3}
   description: Fires a barrage of missiles at the targeted enemy.
   onUseablePressed: {fileID: 11400000, guid: f7e99d76292b9ba4eb3cd9ae4d33beb4, type: 2}
   elementTree: {fileID: 11400000, guid: 4aeda664b5cc6334588b2a3242f5080e, type: 2}

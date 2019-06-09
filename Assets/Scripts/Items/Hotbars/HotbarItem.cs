@@ -10,7 +10,7 @@ namespace Hel.Items.Hotbars
     {
         [Header("Basic Info")]
         [SerializeField] private new string name = "New Hotbar Item Name";
-        [Required] [SerializeField] private Sprite icon = null;
+        [Required] [PreviewField(ObjectFieldAlignment.Left)] [SerializeField] private Sprite icon = null;
 
         public string Name { get { return name; } }
         public abstract string ColouredName { get; }

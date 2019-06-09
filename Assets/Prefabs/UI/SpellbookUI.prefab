@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5082787378576315963}
   - component: {fileID: 7782069506821868416}
   - component: {fileID: 3496892213344185429}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: EarthButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,7 +142,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4866255490454354717}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ColumnFive
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -182,7 +182,7 @@ GameObject:
   - component: {fileID: 461661936193023495}
   - component: {fileID: 644688098683593235}
   - component: {fileID: 4567462110998305258}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: DarkButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -340,7 +340,7 @@ GameObject:
   - component: {fileID: 755856878870683095}
   - component: {fileID: 4981804945187223760}
   - component: {fileID: 1335364061543345386}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: WaterButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -499,7 +499,7 @@ GameObject:
   - component: {fileID: 7773682471638982268}
   - component: {fileID: 1849924118097632825}
   - component: {fileID: 5078970402581994790}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: WaterButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -632,7 +632,7 @@ GameObject:
   - component: {fileID: 7839445732152309733}
   - component: {fileID: 2024705964415810269}
   - component: {fileID: 5877560232202649835}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: AirButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -762,7 +762,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1857967246054492073}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ColumnOne
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -803,7 +803,7 @@ GameObject:
   - component: {fileID: 6574215771842973682}
   - component: {fileID: 6644186219956564687}
   - component: {fileID: 2303660899381425267}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: DarkButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -935,7 +935,7 @@ GameObject:
   - component: {fileID: 5013953133624645028}
   - component: {fileID: 5347054495558848967}
   - component: {fileID: 3897612715828306702}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: SpellsBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1011,7 +1011,7 @@ GameObject:
   - component: {fileID: 5605217956980759021}
   - component: {fileID: 4176896264743022930}
   - component: {fileID: 8964257182217161964}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: TreeElementsHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1088,7 +1088,7 @@ GameObject:
   - component: {fileID: 6947357103816449284}
   - component: {fileID: 443216847447735910}
   - component: {fileID: 8183788081278793965}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: AirButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1248,7 +1248,7 @@ GameObject:
   - component: {fileID: 2397487474779627326}
   - component: {fileID: 6073018127878517000}
   - component: {fileID: 7565564635865870572}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: SpellbookCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1361,7 +1361,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2587440742340340080}
   - component: {fileID: 8974388324671681939}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: SpellsHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1431,7 +1431,7 @@ GameObject:
   - component: {fileID: 4387364826510176412}
   - component: {fileID: 3296237318028408933}
   - component: {fileID: 4672258628148314273}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ArcaneButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1564,8 +1564,8 @@ GameObject:
   - component: {fileID: 2394839161575709965}
   - component: {fileID: 6208232344149863725}
   - component: {fileID: 4135321639998276058}
-  m_Layer: 0
-  m_Name: PlayerSpellbook
+  m_Layer: 5
+  m_Name: SpellbookUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1772,7 +1772,7 @@ GameObject:
   - component: {fileID: 7495355025404709924}
   - component: {fileID: 8182029013148336216}
   - component: {fileID: 5234010200186870615}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LightButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1904,7 +1904,7 @@ GameObject:
   - component: {fileID: 5334969021193696299}
   - component: {fileID: 3246543880941363725}
   - component: {fileID: 8450287283712874220}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MainBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1980,7 +1980,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6188733728176400426}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ColumnSix
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2020,7 +2020,7 @@ GameObject:
   - component: {fileID: 5766626837059827167}
   - component: {fileID: 479772874713286226}
   - component: {fileID: 5993586059512412403}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: EarthButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2176,7 +2176,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6567100713335619622}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ColumnTwo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2217,7 +2217,7 @@ GameObject:
   - component: {fileID: 7959824353760480570}
   - component: {fileID: 3926052045961719582}
   - component: {fileID: 4053722662643032359}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: FireButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2349,7 +2349,7 @@ GameObject:
   - component: {fileID: 4171065376736333337}
   - component: {fileID: 4865329654794116278}
   - component: {fileID: 3471161190486718124}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: SpellPointsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2506,7 +2506,7 @@ GameObject:
   - component: {fileID: 3153173506757891797}
   - component: {fileID: 5644388226867461218}
   - component: {fileID: 6718012728587736375}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LightButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2664,7 +2664,7 @@ GameObject:
   - component: {fileID: 4595630731771518364}
   - component: {fileID: 3771636651043935159}
   - component: {fileID: 2247758067886697098}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: SpellbookText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2821,7 +2821,7 @@ GameObject:
   - component: {fileID: 5504562170745528915}
   - component: {fileID: 2530790656667837968}
   - component: {fileID: 7352170826890468161}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: FireButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2979,7 +2979,7 @@ GameObject:
   - component: {fileID: 3530607487327764411}
   - component: {fileID: 5565368665579721156}
   - component: {fileID: 6496528372877532795}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ArcaneButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3135,7 +3135,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7198582631287338885}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ColumnThree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3173,7 +3173,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 965588830360461546}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ColumnSeven
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3211,7 +3211,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 652377195258196582}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ColumnFour
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3251,6 +3251,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpellButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641399648248513316, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054038736217544118, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2507888609095517200, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
         type: 3}
@@ -3389,6 +3399,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpellButton
       objectReference: {fileID: 0}
+    - target: {fileID: 1641399648248513316, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054038736217544118, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2507888609095517200, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3525,6 +3545,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpellButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641399648248513316, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054038736217544118, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2507888609095517200, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
         type: 3}
@@ -3663,6 +3693,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpellButton
       objectReference: {fileID: 0}
+    - target: {fileID: 1641399648248513316, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054038736217544118, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2507888609095517200, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3799,6 +3839,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpellButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641399648248513316, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054038736217544118, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2507888609095517200, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
         type: 3}
@@ -3937,6 +3987,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpellButton
       objectReference: {fileID: 0}
+    - target: {fileID: 1641399648248513316, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054038736217544118, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2507888609095517200, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4073,6 +4133,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpellButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641399648248513316, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054038736217544118, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2507888609095517200, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
         type: 3}
@@ -4211,6 +4281,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpellButton
       objectReference: {fileID: 0}
+    - target: {fileID: 1641399648248513316, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054038736217544118, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2507888609095517200, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4347,6 +4427,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpellButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641399648248513316, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054038736217544118, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2507888609095517200, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
         type: 3}
@@ -4485,6 +4575,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpellButton
       objectReference: {fileID: 0}
+    - target: {fileID: 1641399648248513316, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054038736217544118, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2507888609095517200, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4621,6 +4721,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpellButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641399648248513316, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054038736217544118, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2507888609095517200, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
         type: 3}
@@ -4759,6 +4869,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpellButton
       objectReference: {fileID: 0}
+    - target: {fileID: 1641399648248513316, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054038736217544118, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2507888609095517200, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4895,6 +5015,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpellButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641399648248513316, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054038736217544118, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2507888609095517200, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
         type: 3}
@@ -5033,6 +5163,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpellButton
       objectReference: {fileID: 0}
+    - target: {fileID: 1641399648248513316, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054038736217544118, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2507888609095517200, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5169,6 +5309,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpellButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641399648248513316, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054038736217544118, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2507888609095517200, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
         type: 3}
@@ -5307,6 +5457,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpellButton
       objectReference: {fileID: 0}
+    - target: {fileID: 1641399648248513316, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054038736217544118, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2507888609095517200, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5443,6 +5603,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpellButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641399648248513316, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054038736217544118, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2507888609095517200, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
         type: 3}
@@ -5581,6 +5751,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpellButton
       objectReference: {fileID: 0}
+    - target: {fileID: 1641399648248513316, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054038736217544118, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2507888609095517200, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5717,6 +5897,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpellButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641399648248513316, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054038736217544118, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2507888609095517200, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
         type: 3}
@@ -5855,6 +6045,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpellButton
       objectReference: {fileID: 0}
+    - target: {fileID: 1641399648248513316, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054038736217544118, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2507888609095517200, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5992,6 +6192,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExitButton
       objectReference: {fileID: 0}
+    - target: {fileID: 8989689443714499505, guid: 554366f6f14178e4cb09706bd5cd1664,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2116304055298359007, guid: 554366f6f14178e4cb09706bd5cd1664,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6097,6 +6302,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7900574721023648362, guid: 554366f6f14178e4cb09706bd5cd1664,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7935353560291461689, guid: 554366f6f14178e4cb09706bd5cd1664,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -6131,6 +6341,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpellButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641399648248513316, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054038736217544118, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2507888609095517200, guid: 8b5bb8be79aeeee4ba9fd8bbe859293c,
         type: 3}

@@ -83,7 +83,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2681526078302759560}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PlayerCrosshair
   m_TagString: Untagged
   m_Icon: {fileID: 0}

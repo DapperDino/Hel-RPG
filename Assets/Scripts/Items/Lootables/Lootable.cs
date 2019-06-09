@@ -14,8 +14,8 @@ namespace Hel.Items.Lootables
         [Required] [SerializeField] private LootableEvent onLootableStartLooting = null;
         [Required] [SerializeField] private List<ItemSlot> itemSlots = new List<ItemSlot>();
 
-        public string InteractionText { get { return "Loot"; } }
-        public List<ItemSlot> ItemSlots { get { return itemSlots; } }
+        public string InteractionText => "Loot";
+        public List<ItemSlot> ItemSlots => itemSlots;
 
         public void Interact()
         {

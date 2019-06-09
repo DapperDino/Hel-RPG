@@ -174,9 +174,9 @@ MonoBehaviour:
       Entry: 8
       Data: 
   name: Fireblast
-  icon: {fileID: 21300000, guid: 801e4ae61112f004ba1b04c0df0f3b85, type: 3}
+  icon: {fileID: 21300000, guid: 181b75fb15091d94c89b96f0f5656964, type: 3}
   description: Launches a ball of fire that deals damage.
   onUseablePressed: {fileID: 11400000, guid: f7e99d76292b9ba4eb3cd9ae4d33beb4, type: 2}
   elementTree: {fileID: 11400000, guid: a00d23c345a2de74da38703a989e9224, type: 2}
-  maxCooldownDuration: 1.5
+  maxCooldownDuration: 2
   channelDuration: 0.9

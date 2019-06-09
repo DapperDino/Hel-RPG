@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 676453648207264574}
   - component: {fileID: 7095512248715562802}
   - component: {fileID: 8976912781303153403}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: AchievementsButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 2198731268333120055}
   - component: {fileID: 3569163647789033923}
   - component: {fileID: 7964090594872092230}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: AchievementsButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -289,7 +289,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6692857691171524703}
   - component: {fileID: 6692857691171524702}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PauseMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -336,7 +336,7 @@ GameObject:
   - component: {fileID: 6692857691195369390}
   - component: {fileID: 6692857691195369391}
   - component: {fileID: 6692857691195369376}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ExitGameButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -467,7 +467,7 @@ GameObject:
   - component: {fileID: 6692857691348508570}
   - component: {fileID: 6692857691348508568}
   - component: {fileID: 6692857691348508569}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ReturnButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -625,7 +625,7 @@ GameObject:
   - component: {fileID: 6692857691396280011}
   - component: {fileID: 6692857691396280009}
   - component: {fileID: 6692857691396280010}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: SettingsButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -784,7 +784,7 @@ GameObject:
   - component: {fileID: 6692857691761614761}
   - component: {fileID: 6692857691761614762}
   - component: {fileID: 6692857691761614763}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ReturnButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -915,7 +915,7 @@ GameObject:
   - component: {fileID: 6692857691778334896}
   - component: {fileID: 6692857691778334910}
   - component: {fileID: 6692857691778334911}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -992,7 +992,7 @@ GameObject:
   - component: {fileID: 6692857692461102804}
   - component: {fileID: 6692857692461102805}
   - component: {fileID: 1576805873241864273}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PauseCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1107,7 +1107,7 @@ GameObject:
   - component: {fileID: 6692857692616596323}
   - component: {fileID: 6692857692616596324}
   - component: {fileID: 6692857692616596325}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: SettingsButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1227,7 +1227,7 @@ GameObject:
   - component: {fileID: 6692857692671374268}
   - component: {fileID: 6692857692671374266}
   - component: {fileID: 6692857692671374267}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ExitGameButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1385,7 +1385,7 @@ GameObject:
   - component: {fileID: 6692857692698124929}
   - component: {fileID: 6692857692698124943}
   - component: {fileID: 6692857692698124928}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: HEL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1543,7 +1543,7 @@ GameObject:
   - component: {fileID: 6692857692771523529}
   - component: {fileID: 6692857692771523511}
   - component: {fileID: 6692857692771523528}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BlackStrip
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -347,7 +347,7 @@ GameObject:
   - component: {fileID: 220260183}
   - component: {fileID: 220260182}
   - component: {fileID: 4299634728324673176}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: AbilityChannelUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}

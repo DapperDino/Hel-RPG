@@ -158,9 +158,7 @@ namespace Hel.Items.Hotbars
             }
             else
             {
-                //Disable the cooldown related UI for this slot.
-                cooldownOverlay.enabled = false;
-                cooldownOverlayText.enabled = false;
+                ClearCooldownUI();
             }
         }
 
@@ -187,8 +185,8 @@ namespace Hel.Items.Hotbars
 
         private void ClearCooldownUI()
         {
-            cooldownOverlay.fillAmount = 0f;
-            cooldownOverlayText.text = "";
+            cooldownOverlay.enabled = false;
+            cooldownOverlayText.enabled = false;
         }
 
         protected override void EnableSlotUI(bool enable)

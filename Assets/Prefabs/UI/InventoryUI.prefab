@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1395598644}
   - component: {fileID: 1395598643}
   - component: {fileID: 1115859624103615876}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: InventoryCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 1460339795}
   - component: {fileID: 1460339797}
   - component: {fileID: 1460339796}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: InventoryPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 4260228772663661121}
   - component: {fileID: 4232084862813888991}
   - component: {fileID: 9213779953499818436}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: DestroyItemCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -335,7 +335,7 @@ GameObject:
   - component: {fileID: 877392626947437064}
   - component: {fileID: 3358653102834582052}
   - component: {fileID: 6489203959596424741}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: YesButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -493,7 +493,7 @@ GameObject:
   - component: {fileID: 154573848035796011}
   - component: {fileID: 6410020840861294647}
   - component: {fileID: 2102595035473053945}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: CancelButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -651,7 +651,7 @@ GameObject:
   - component: {fileID: 5662518129027406773}
   - component: {fileID: 5338134395746978239}
   - component: {fileID: 2399094328044651259}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: DestroyItemPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -728,7 +728,7 @@ GameObject:
   - component: {fileID: 1570643653396688261}
   - component: {fileID: 5986313282324141668}
   - component: {fileID: 6231577502466133943}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -803,7 +803,7 @@ GameObject:
   - component: {fileID: 707923539744328664}
   - component: {fileID: 637202720818974714}
   - component: {fileID: 3599723970709017548}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: YesButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -933,7 +933,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7934050276067140996}
   - component: {fileID: 3637874477843635172}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: SlotsHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1013,8 +1013,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3014808433819931342}
   - component: {fileID: 390169114814049468}
-  m_Layer: 0
-  m_Name: PlayerInventory
+  m_Layer: 5
+  m_Name: InventoryUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1061,7 +1061,7 @@ GameObject:
   - component: {fileID: 2245518812816744498}
   - component: {fileID: 1013123605862070682}
   - component: {fileID: 1367120580220299569}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: AreYouSureText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1219,7 +1219,7 @@ GameObject:
   - component: {fileID: 3425765168499680146}
   - component: {fileID: 1171663465713299092}
   - component: {fileID: 2868105760151576934}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: CancelButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1351,6 +1351,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: InventorySlot
       objectReference: {fileID: 0}
+    - target: {fileID: 4954977250130576715, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5746439155064221530, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1456,35 +1461,20 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6607984695241251426, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: inventoryPanel
-      value: 
-      objectReference: {fileID: 1460339794}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
       propertyPath: itemDestroyer
       value: 
       objectReference: {fileID: 9213779953499818436}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6064108406340919738, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -1496,8 +1486,12 @@ PrefabInstance:
       propertyPath: m_firstOverflowCharacterIndex
       value: -1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4555826627347095354, guid: de320002fb02b22448fcc704cc705310, type: 3}
+    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de320002fb02b22448fcc704cc705310, type: 3}
 --- !u!224 &5228989528903281069 stripped
 RectTransform:
@@ -1516,6 +1510,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InventorySlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954977250130576715, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5746439155064221530, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -1622,35 +1621,20 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6607984695241251426, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: inventoryPanel
-      value: 
-      objectReference: {fileID: 1460339794}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
       propertyPath: itemDestroyer
       value: 
       objectReference: {fileID: 9213779953499818436}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6064108406340919738, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -1662,8 +1646,12 @@ PrefabInstance:
       propertyPath: m_firstOverflowCharacterIndex
       value: -1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4555826627347095354, guid: de320002fb02b22448fcc704cc705310, type: 3}
+    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de320002fb02b22448fcc704cc705310, type: 3}
 --- !u!224 &6862699343709575976 stripped
 RectTransform:
@@ -1682,6 +1670,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InventorySlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954977250130576715, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5746439155064221530, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -1788,35 +1781,20 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6607984695241251426, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: inventoryPanel
-      value: 
-      objectReference: {fileID: 1460339794}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
       propertyPath: itemDestroyer
       value: 
       objectReference: {fileID: 9213779953499818436}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6064108406340919738, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -1828,8 +1806,12 @@ PrefabInstance:
       propertyPath: m_firstOverflowCharacterIndex
       value: -1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4555826627347095354, guid: de320002fb02b22448fcc704cc705310, type: 3}
+    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de320002fb02b22448fcc704cc705310, type: 3}
 --- !u!224 &6463726309174504605 stripped
 RectTransform:
@@ -1848,6 +1830,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InventorySlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954977250130576715, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5746439155064221530, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -1954,35 +1941,20 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6607984695241251426, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: inventoryPanel
-      value: 
-      objectReference: {fileID: 1460339794}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
       propertyPath: itemDestroyer
       value: 
       objectReference: {fileID: 9213779953499818436}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6064108406340919738, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -1994,8 +1966,12 @@ PrefabInstance:
       propertyPath: m_firstOverflowCharacterIndex
       value: -1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4555826627347095354, guid: de320002fb02b22448fcc704cc705310, type: 3}
+    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de320002fb02b22448fcc704cc705310, type: 3}
 --- !u!224 &7403691451467501710 stripped
 RectTransform:
@@ -2014,6 +1990,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ExitButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 8989689443714499505, guid: 554366f6f14178e4cb09706bd5cd1664,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2116304055298359007, guid: 554366f6f14178e4cb09706bd5cd1664,
         type: 3}
@@ -2120,20 +2101,10 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 7935353560291461689, guid: 554366f6f14178e4cb09706bd5cd1664,
+    - target: {fileID: 7900574721023648362, guid: 554366f6f14178e4cb09706bd5cd1664,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935353560291461689, guid: 554366f6f14178e4cb09706bd5cd1664,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935353560291461689, guid: 554366f6f14178e4cb09706bd5cd1664,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7935353560291461689, guid: 554366f6f14178e4cb09706bd5cd1664,
         type: 3}
@@ -2149,26 +2120,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5354713202789649552, guid: 554366f6f14178e4cb09706bd5cd1664,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5354713202789649552, guid: 554366f6f14178e4cb09706bd5cd1664,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5354713202789649552, guid: 554366f6f14178e4cb09706bd5cd1664,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5354713202789649552, guid: 554366f6f14178e4cb09706bd5cd1664,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 554366f6f14178e4cb09706bd5cd1664, type: 3}
@@ -2189,6 +2140,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InventorySlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954977250130576715, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5746439155064221530, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -2295,35 +2251,20 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6607984695241251426, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: inventoryPanel
-      value: 
-      objectReference: {fileID: 1460339794}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
       propertyPath: itemDestroyer
       value: 
       objectReference: {fileID: 9213779953499818436}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6064108406340919738, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -2335,8 +2276,12 @@ PrefabInstance:
       propertyPath: m_firstOverflowCharacterIndex
       value: -1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4555826627347095354, guid: de320002fb02b22448fcc704cc705310, type: 3}
+    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de320002fb02b22448fcc704cc705310, type: 3}
 --- !u!224 &7147779984679090735 stripped
 RectTransform:
@@ -2355,6 +2300,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InventorySlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954977250130576715, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5746439155064221530, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -2461,35 +2411,20 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6607984695241251426, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: inventoryPanel
-      value: 
-      objectReference: {fileID: 1460339794}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
       propertyPath: itemDestroyer
       value: 
       objectReference: {fileID: 9213779953499818436}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6064108406340919738, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -2501,8 +2436,12 @@ PrefabInstance:
       propertyPath: m_firstOverflowCharacterIndex
       value: -1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4555826627347095354, guid: de320002fb02b22448fcc704cc705310, type: 3}
+    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de320002fb02b22448fcc704cc705310, type: 3}
 --- !u!224 &8506040683828894766 stripped
 RectTransform:
@@ -2521,6 +2460,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InventorySlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954977250130576715, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5746439155064221530, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -2627,35 +2571,20 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6607984695241251426, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: inventoryPanel
-      value: 
-      objectReference: {fileID: 1460339794}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
       propertyPath: itemDestroyer
       value: 
       objectReference: {fileID: 9213779953499818436}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6064108406340919738, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -2667,8 +2596,12 @@ PrefabInstance:
       propertyPath: m_firstOverflowCharacterIndex
       value: -1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4555826627347095354, guid: de320002fb02b22448fcc704cc705310, type: 3}
+    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de320002fb02b22448fcc704cc705310, type: 3}
 --- !u!224 &1064742315597091887 stripped
 RectTransform:
@@ -2687,6 +2620,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InventorySlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954977250130576715, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5746439155064221530, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -2793,35 +2731,20 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6607984695241251426, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: inventoryPanel
-      value: 
-      objectReference: {fileID: 1460339794}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
       propertyPath: itemDestroyer
       value: 
       objectReference: {fileID: 9213779953499818436}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6064108406340919738, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -2833,8 +2756,12 @@ PrefabInstance:
       propertyPath: m_firstOverflowCharacterIndex
       value: -1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4555826627347095354, guid: de320002fb02b22448fcc704cc705310, type: 3}
+    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de320002fb02b22448fcc704cc705310, type: 3}
 --- !u!224 &955897862441014096 stripped
 RectTransform:
@@ -2853,6 +2780,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InventorySlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954977250130576715, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5746439155064221530, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -2959,35 +2891,20 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6607984695241251426, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: inventoryPanel
-      value: 
-      objectReference: {fileID: 1460339794}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
       propertyPath: itemDestroyer
       value: 
       objectReference: {fileID: 9213779953499818436}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6064108406340919738, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -2999,8 +2916,12 @@ PrefabInstance:
       propertyPath: m_firstOverflowCharacterIndex
       value: -1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4555826627347095354, guid: de320002fb02b22448fcc704cc705310, type: 3}
+    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de320002fb02b22448fcc704cc705310, type: 3}
 --- !u!224 &901867696815770859 stripped
 RectTransform:
@@ -3019,6 +2940,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InventorySlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954977250130576715, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5746439155064221530, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -3125,35 +3051,20 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6607984695241251426, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: inventoryPanel
-      value: 
-      objectReference: {fileID: 1460339794}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
       propertyPath: itemDestroyer
       value: 
       objectReference: {fileID: 9213779953499818436}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6064108406340919738, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -3165,8 +3076,12 @@ PrefabInstance:
       propertyPath: m_firstOverflowCharacterIndex
       value: -1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4555826627347095354, guid: de320002fb02b22448fcc704cc705310, type: 3}
+    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de320002fb02b22448fcc704cc705310, type: 3}
 --- !u!224 &630947518614048673 stripped
 RectTransform:
@@ -3185,6 +3100,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InventorySlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954977250130576715, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5746439155064221530, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -3291,35 +3211,20 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6607984695241251426, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: inventoryPanel
-      value: 
-      objectReference: {fileID: 1460339794}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
       propertyPath: itemDestroyer
       value: 
       objectReference: {fileID: 9213779953499818436}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6064108406340919738, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -3331,8 +3236,12 @@ PrefabInstance:
       propertyPath: m_firstOverflowCharacterIndex
       value: -1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4555826627347095354, guid: de320002fb02b22448fcc704cc705310, type: 3}
+    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de320002fb02b22448fcc704cc705310, type: 3}
 --- !u!224 &2212490198895841789 stripped
 RectTransform:
@@ -3351,6 +3260,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InventorySlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954977250130576715, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5746439155064221530, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -3457,35 +3371,20 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6607984695241251426, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: inventoryPanel
-      value: 
-      objectReference: {fileID: 1460339794}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
       propertyPath: itemDestroyer
       value: 
       objectReference: {fileID: 9213779953499818436}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6064108406340919738, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -3497,8 +3396,12 @@ PrefabInstance:
       propertyPath: m_firstOverflowCharacterIndex
       value: -1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4555826627347095354, guid: de320002fb02b22448fcc704cc705310, type: 3}
+    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de320002fb02b22448fcc704cc705310, type: 3}
 --- !u!224 &1645813543851460218 stripped
 RectTransform:
@@ -3517,6 +3420,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InventorySlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954977250130576715, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5746439155064221530, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -3623,35 +3531,20 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6607984695241251426, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: inventoryPanel
-      value: 
-      objectReference: {fileID: 1460339794}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
       propertyPath: itemDestroyer
       value: 
       objectReference: {fileID: 9213779953499818436}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6064108406340919738, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -3663,8 +3556,12 @@ PrefabInstance:
       propertyPath: m_firstOverflowCharacterIndex
       value: -1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4555826627347095354, guid: de320002fb02b22448fcc704cc705310, type: 3}
+    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de320002fb02b22448fcc704cc705310, type: 3}
 --- !u!224 &1550824600456762325 stripped
 RectTransform:
@@ -3683,6 +3580,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InventorySlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954977250130576715, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5746439155064221530, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -3789,35 +3691,20 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6607984695241251426, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: inventoryPanel
-      value: 
-      objectReference: {fileID: 1460339794}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
       propertyPath: itemDestroyer
       value: 
       objectReference: {fileID: 9213779953499818436}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6064108406340919738, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -3829,8 +3716,12 @@ PrefabInstance:
       propertyPath: m_firstOverflowCharacterIndex
       value: -1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4555826627347095354, guid: de320002fb02b22448fcc704cc705310, type: 3}
+    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de320002fb02b22448fcc704cc705310, type: 3}
 --- !u!224 &1295934486221266989 stripped
 RectTransform:
@@ -3849,6 +3740,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InventorySlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954977250130576715, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5746439155064221530, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -3955,35 +3851,20 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6607984695241251426, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: inventoryPanel
-      value: 
-      objectReference: {fileID: 1460339794}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
       propertyPath: itemDestroyer
       value: 
       objectReference: {fileID: 9213779953499818436}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6064108406340919738, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -3995,8 +3876,12 @@ PrefabInstance:
       propertyPath: m_firstOverflowCharacterIndex
       value: -1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4555826627347095354, guid: de320002fb02b22448fcc704cc705310, type: 3}
+    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de320002fb02b22448fcc704cc705310, type: 3}
 --- !u!224 &2532768807574152715 stripped
 RectTransform:
@@ -4015,6 +3900,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InventorySlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954977250130576715, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5746439155064221530, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -4121,35 +4011,20 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6607984695241251426, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: inventoryPanel
-      value: 
-      objectReference: {fileID: 1460339794}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
       propertyPath: itemDestroyer
       value: 
       objectReference: {fileID: 9213779953499818436}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6064108406340919738, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -4161,8 +4036,12 @@ PrefabInstance:
       propertyPath: m_firstOverflowCharacterIndex
       value: -1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4555826627347095354, guid: de320002fb02b22448fcc704cc705310, type: 3}
+    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de320002fb02b22448fcc704cc705310, type: 3}
 --- !u!224 &4392945942152318291 stripped
 RectTransform:
@@ -4181,6 +4060,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InventorySlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954977250130576715, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5746439155064221530, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -4287,35 +4171,20 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6607984695241251426, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: inventoryPanel
-      value: 
-      objectReference: {fileID: 1460339794}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
       propertyPath: itemDestroyer
       value: 
       objectReference: {fileID: 9213779953499818436}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6064108406340919738, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -4327,8 +4196,12 @@ PrefabInstance:
       propertyPath: m_firstOverflowCharacterIndex
       value: -1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4555826627347095354, guid: de320002fb02b22448fcc704cc705310, type: 3}
+    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de320002fb02b22448fcc704cc705310, type: 3}
 --- !u!224 &4383314533831713236 stripped
 RectTransform:
@@ -4347,6 +4220,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InventorySlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954977250130576715, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5746439155064221530, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -4453,35 +4331,20 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6607984695241251426, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: inventoryPanel
-      value: 
-      objectReference: {fileID: 1460339794}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
       propertyPath: itemDestroyer
       value: 
       objectReference: {fileID: 9213779953499818436}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6064108406340919738, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -4493,8 +4356,12 @@ PrefabInstance:
       propertyPath: m_firstOverflowCharacterIndex
       value: -1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4555826627347095354, guid: de320002fb02b22448fcc704cc705310, type: 3}
+    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de320002fb02b22448fcc704cc705310, type: 3}
 --- !u!224 &4310431023389666610 stripped
 RectTransform:
@@ -4513,6 +4380,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InventorySlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954977250130576715, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5746439155064221530, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -4619,35 +4491,20 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6607984695241251426, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: inventoryPanel
-      value: 
-      objectReference: {fileID: 1460339794}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
       propertyPath: itemDestroyer
       value: 
       objectReference: {fileID: 9213779953499818436}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6064108406340919738, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -4659,8 +4516,12 @@ PrefabInstance:
       propertyPath: m_firstOverflowCharacterIndex
       value: -1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4555826627347095354, guid: de320002fb02b22448fcc704cc705310, type: 3}
+    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de320002fb02b22448fcc704cc705310, type: 3}
 --- !u!224 &4085983163231186740 stripped
 RectTransform:
@@ -4679,6 +4540,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InventorySlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954977250130576715, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5746439155064221530, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -4785,35 +4651,20 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6607984695241251426, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: inventoryPanel
-      value: 
-      objectReference: {fileID: 1460339794}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5157778072691170106, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
       propertyPath: itemDestroyer
       value: 
       objectReference: {fileID: 9213779953499818436}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+    - target: {fileID: 6064108406340919738, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
         type: 3}
@@ -4825,8 +4676,12 @@ PrefabInstance:
       propertyPath: m_firstOverflowCharacterIndex
       value: -1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4555826627347095354, guid: de320002fb02b22448fcc704cc705310, type: 3}
+    - target: {fileID: 2153492107565078643, guid: de320002fb02b22448fcc704cc705310,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de320002fb02b22448fcc704cc705310, type: 3}
 --- !u!224 &3743105497662522395 stripped
 RectTransform:

@@ -160,6 +160,9 @@ namespace Hel.Items
             ItemSlot firstSlot = ItemSlots[indexOne];
             ItemSlot secondSlot = ItemSlots[indexTwo];
 
+            //If the two slots are the same, do nothing.
+            if (firstSlot == secondSlot) { return; }
+
             //Make sure the second slot has an item.
             if (secondSlot.item != null)
             {
@@ -207,6 +210,26 @@ namespace Hel.Items
                 }
             }
             return false;
+        }
+
+        public bool CanAddItem(ItemSlot itemSlotToAdd)
+        {
+            ItemSlot[] cachedSlots = itemSlots.Clone() as ItemSlot[];
+
+            bool success = true;
+
+            ItemSlot addedSlot = AddItem(itemSlotToAdd);
+
+            if (addedSlot.quantity != 0)
+            {
+                success = false;
+            }
+
+            itemSlots = cachedSlots;
+
+            OnItemsUpdated.Invoke();
+
+            return success;
         }
 
         public bool CanAddAllItems(List<ItemSlot> itemSlotsToAdd)

@@ -11,7 +11,10 @@ namespace Hel.Items.Crafting
     public class Recipe : ScriptableObject
     {
         [Required] [SerializeField] private List<ItemSlot> materials = new List<ItemSlot>();
-        [Required] [SerializeField] private List<ItemSlot> results = new List<ItemSlot>();
+        [SerializeField] private ItemSlot result = new ItemSlot();
+
+        public List<ItemSlot> Materials => materials;
+        public ItemSlot Result => result;
 
         public bool CanCraft(ItemHolder itemHolder)
         {
@@ -26,7 +29,7 @@ namespace Hel.Items.Crafting
             }
 
             //Make sure there is enough space in the inventory to add all the results.
-            if (!itemHolder.CanAddAllItems(results)) { return false; }
+            if (!itemHolder.CanAddItem(result)) { return false; }
 
             return true;
         }
@@ -43,12 +46,8 @@ namespace Hel.Items.Crafting
                 itemHolder.RemoveItem(itemSlot.item, itemSlot.quantity);
             }
 
-            //Loop through each result.
-            foreach (ItemSlot itemSlot in results)
-            {
-                //Add the item to the inventory.
-                itemHolder.AddItem(itemSlot);
-            }
+            //Add the result to the inventory.
+            itemHolder.AddItem(result);
         }
     }
 }

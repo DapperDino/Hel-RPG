@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1014801283}
   - component: {fileID: 1014801282}
   - component: {fileID: 1014801281}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: HotbarCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 1489224130}
   - component: {fileID: 1489224129}
   - component: {fileID: 1489224131}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: HotbarPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 2034175667}
   - component: {fileID: 2034175669}
   - component: {fileID: 2034175668}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: TMP SubMeshUI [LiberationSans SDF Material + LiberationSans SDF Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,8 +294,8 @@ GameObject:
   - component: {fileID: 7598265707034056835}
   - component: {fileID: 6322484125143317841}
   - component: {fileID: 2236956007318291708}
-  m_Layer: 0
-  m_Name: PlayerHotbar
+  m_Layer: 5
+  m_Name: HotbarUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -379,6 +379,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HotbarSlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542719868773111665, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2643638610063162884, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359603820156353224, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 80381021968722000, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7016044984609149051, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1658720849079521207, guid: c4ace32d32d20b745999799111fd9657,
         type: 3}
@@ -485,11 +510,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 8632454366863846862, guid: c4ace32d32d20b745999799111fd9657,
-        type: 3}
-      propertyPath: hotbarPanel
-      value: 
-      objectReference: {fileID: 1489224127}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4ace32d32d20b745999799111fd9657, type: 3}
 --- !u!224 &4605591652742878168 stripped
@@ -521,6 +541,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HotbarSlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542719868773111665, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2643638610063162884, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359603820156353224, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 80381021968722000, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7016044984609149051, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1658720849079521207, guid: c4ace32d32d20b745999799111fd9657,
         type: 3}
@@ -627,11 +672,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 8632454366863846862, guid: c4ace32d32d20b745999799111fd9657,
-        type: 3}
-      propertyPath: hotbarPanel
-      value: 
-      objectReference: {fileID: 1489224127}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4ace32d32d20b745999799111fd9657, type: 3}
 --- !u!114 &9196281244627055917 stripped
@@ -663,6 +703,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HotbarSlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542719868773111665, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2643638610063162884, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359603820156353224, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 80381021968722000, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7016044984609149051, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1658720849079521207, guid: c4ace32d32d20b745999799111fd9657,
         type: 3}
@@ -769,11 +834,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 8632454366863846862, guid: c4ace32d32d20b745999799111fd9657,
-        type: 3}
-      propertyPath: hotbarPanel
-      value: 
-      objectReference: {fileID: 1489224127}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4ace32d32d20b745999799111fd9657, type: 3}
 --- !u!224 &4605591652888256502 stripped
@@ -805,6 +865,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HotbarSlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542719868773111665, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2643638610063162884, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359603820156353224, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 80381021968722000, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7016044984609149051, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1658720849079521207, guid: c4ace32d32d20b745999799111fd9657,
         type: 3}
@@ -911,11 +996,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 8632454366863846862, guid: c4ace32d32d20b745999799111fd9657,
-        type: 3}
-      propertyPath: hotbarPanel
-      value: 
-      objectReference: {fileID: 1489224127}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4ace32d32d20b745999799111fd9657, type: 3}
 --- !u!224 &4605591652230643199 stripped
@@ -947,6 +1027,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HotbarSlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542719868773111665, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2643638610063162884, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359603820156353224, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 80381021968722000, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7016044984609149051, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1658720849079521207, guid: c4ace32d32d20b745999799111fd9657,
         type: 3}
@@ -1053,11 +1158,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 8632454366863846862, guid: c4ace32d32d20b745999799111fd9657,
-        type: 3}
-      propertyPath: hotbarPanel
-      value: 
-      objectReference: {fileID: 1489224127}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4ace32d32d20b745999799111fd9657, type: 3}
 --- !u!224 &4605591652144256523 stripped
@@ -1089,6 +1189,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HotbarSlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542719868773111665, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2643638610063162884, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359603820156353224, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 80381021968722000, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7016044984609149051, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1658720849079521207, guid: c4ace32d32d20b745999799111fd9657,
         type: 3}
@@ -1195,11 +1320,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 8632454366863846862, guid: c4ace32d32d20b745999799111fd9657,
-        type: 3}
-      propertyPath: hotbarPanel
-      value: 
-      objectReference: {fileID: 1489224127}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4ace32d32d20b745999799111fd9657, type: 3}
 --- !u!114 &9196281243645548463 stripped
@@ -1231,6 +1351,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HotbarSlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542719868773111665, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2643638610063162884, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359603820156353224, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 80381021968722000, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7016044984609149051, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1658720849079521207, guid: c4ace32d32d20b745999799111fd9657,
         type: 3}
@@ -1337,11 +1482,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 8632454366863846862, guid: c4ace32d32d20b745999799111fd9657,
-        type: 3}
-      propertyPath: hotbarPanel
-      value: 
-      objectReference: {fileID: 1489224127}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4ace32d32d20b745999799111fd9657, type: 3}
 --- !u!224 &4605591651841454683 stripped
@@ -1373,6 +1513,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HotbarSlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542719868773111665, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2643638610063162884, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359603820156353224, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 80381021968722000, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7016044984609149051, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1658720849079521207, guid: c4ace32d32d20b745999799111fd9657,
         type: 3}
@@ -1479,11 +1644,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 8632454366863846862, guid: c4ace32d32d20b745999799111fd9657,
-        type: 3}
-      propertyPath: hotbarPanel
-      value: 
-      objectReference: {fileID: 1489224127}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4ace32d32d20b745999799111fd9657, type: 3}
 --- !u!114 &9196281243844320889 stripped
@@ -1516,11 +1676,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: HotbarSlot
       objectReference: {fileID: 0}
+    - target: {fileID: 3542719868773111665, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8868319951204652584, guid: c4ace32d32d20b745999799111fd9657,
         type: 3}
       propertyPath: m_subTextObjects.Array.data[1]
       value: 
       objectReference: {fileID: 2034175668}
+    - target: {fileID: 2643638610063162884, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359603820156353224, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 80381021968722000, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7016044984609149051, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1658720849079521207, guid: c4ace32d32d20b745999799111fd9657,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1626,11 +1811,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 8632454366863846862, guid: c4ace32d32d20b745999799111fd9657,
-        type: 3}
-      propertyPath: hotbarPanel
-      value: 
-      objectReference: {fileID: 1489224127}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4ace32d32d20b745999799111fd9657, type: 3}
 --- !u!224 &6558053933589355986 stripped
@@ -1680,6 +1860,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HotbarSlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542719868773111665, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2643638610063162884, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359603820156353224, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 80381021968722000, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7016044984609149051, guid: c4ace32d32d20b745999799111fd9657,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1658720849079521207, guid: c4ace32d32d20b745999799111fd9657,
         type: 3}
@@ -1786,11 +1991,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 8632454366863846862, guid: c4ace32d32d20b745999799111fd9657,
-        type: 3}
-      propertyPath: hotbarPanel
-      value: 
-      objectReference: {fileID: 1489224127}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4ace32d32d20b745999799111fd9657, type: 3}
 --- !u!224 &6469563176525349144 stripped

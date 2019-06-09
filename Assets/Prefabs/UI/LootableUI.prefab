@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 25192421}
   - component: {fileID: 25192420}
   - component: {fileID: 7040772881256909142}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LootableCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 170210047}
   - component: {fileID: 170210050}
   - component: {fileID: 170210049}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LootListViewport
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -251,7 +251,7 @@ GameObject:
   - component: {fileID: 281325327}
   - component: {fileID: 281325326}
   - component: {fileID: 281325325}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LootListContentHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -364,7 +364,7 @@ GameObject:
   - component: {fileID: 1003990758}
   - component: {fileID: 1003990760}
   - component: {fileID: 1003990759}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -438,7 +438,7 @@ GameObject:
   - component: {fileID: 1173591863}
   - component: {fileID: 1173591865}
   - component: {fileID: 1173591864}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -518,7 +518,7 @@ GameObject:
   - component: {fileID: 1455258435}
   - component: {fileID: 1455258434}
   - component: {fileID: 1455258433}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Scrollbar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -643,7 +643,7 @@ GameObject:
   - component: {fileID: 2010158286}
   - component: {fileID: 2010158288}
   - component: {fileID: 2010158287}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ItemText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -799,7 +799,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2117304976}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Sliding Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -838,7 +838,7 @@ GameObject:
   - component: {fileID: 8765017112350697252}
   - component: {fileID: 5094873597790345005}
   - component: {fileID: 9137051215205531729}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LootAllButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -969,7 +969,7 @@ GameObject:
   - component: {fileID: 5251927896366349144}
   - component: {fileID: 53814354551452351}
   - component: {fileID: 2036322434043273242}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LootableUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1047,7 +1047,7 @@ GameObject:
   - component: {fileID: 2224997768518053419}
   - component: {fileID: 7422336176056524954}
   - component: {fileID: 5882831066405306566}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LootAllText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1205,6 +1205,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExitButton
       objectReference: {fileID: 0}
+    - target: {fileID: 8989689443714499505, guid: 554366f6f14178e4cb09706bd5cd1664,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2116304055298359007, guid: 554366f6f14178e4cb09706bd5cd1664,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1309,6 +1314,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900574721023648362, guid: 554366f6f14178e4cb09706bd5cd1664,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7935353560291461689, guid: 554366f6f14178e4cb09706bd5cd1664,
         type: 3}

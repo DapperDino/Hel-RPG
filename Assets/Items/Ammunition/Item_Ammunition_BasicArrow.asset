@@ -22,7 +22,7 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   name: Basic Arrow
-  icon: {fileID: 21300000, guid: 63e01515f0deeba41a6b194fc04ea176, type: 3}
+  icon: {fileID: 21300000, guid: 89ab3acf1d036b44d822331b6d8188da, type: 3}
   rarity: {fileID: 11400000, guid: 5366b8cf6e769fa4eaf74d97249b9018, type: 2}
   sellPrice: 1
   maxStack: 99
